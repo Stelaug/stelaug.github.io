@@ -1,9 +1,28 @@
-.gaa {
-    color: black;
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+#front {
+    position: absolute;
+    margin: 10px;
+}
+
+#back {
+    position: inherit;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 .dropbtn {
-    background-color: lightcoral;
+    background-color: black;
     color: white;
     padding: 16px; 
     font-size: 16px;
@@ -11,7 +30,7 @@
     cursor: pointer;
 }
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980b9;
+    background-color: #2c3236;
 }
 .dropdown {
     position: relative;
@@ -20,7 +39,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #9c8e8e;
     min-width: 160px;
     overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

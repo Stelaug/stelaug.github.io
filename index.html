@@ -8,34 +8,46 @@
     <title>Anderstale</title>
 </head>
 <body>
+    <nav>
+        <figure>
+            <img id="front" src="bilder/anders-px-ver1-dspl-ver1.png" height="75px" width="75px">
+            <svg id="back" width="100" height="100">
+                <circle cx="47" cy="52" r="47" stroke="#4E4A4C" stroke-width="4" fill="#949393" />
+            </svg>
+        </figure>
+        <h1>Anderstale 2</h1>
 
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Meny</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="home">Hjem</a>
-            <a href="about">Om</a>
-            <a href="contact.html">Kontakt</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Meny</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="home">Hjem</a>
+                <a href="about">Om</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
         </div>
-    </div>
-    <script>
-        /* Når brukeren klikker på knappen bytt mellom å vise og å skjule innholdet*/
-        function myFunction(){
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        // Lukker dropdown om du klikker utenfor
-        window.onclick = function(event){
-            if(!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
+        <script>
+            /* Når brukeren klikker på knappen bytt mellom å vise og å skjule innholdet*/
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Lukker dropdown om du klikker utenfor
+            window.onclick = function(event){
+                if(!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
                     }
                 }
             }
-        }
-    </script>
+        </script>
+    </nav>
+    <img src="bilder/ALL_THEY_FEAR_IS_ANDERS_s.png">
+
+    
 
 </body>
 </html>
