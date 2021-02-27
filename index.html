@@ -1,1 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderstale</title>
+</head>
+<body>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Meny</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="home">Hjem</a>
+            <a href="about">Om</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+    </div>
+    <script>
+        /* Når brukeren klikker på knappen bytt mellom å vise og å skjule innholdet*/
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Lukker dropdown om du klikker utenfor
+        window.onclick = function(event){
+            if(!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
