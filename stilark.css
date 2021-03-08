@@ -17,21 +17,21 @@ nav {
 #back {
     position: inherit;
 }
-
-h1 {
-    font-size: 2em;
-
-}
-
 /*Font*/
 @font-face {
     font-family: 'Pixel UniCode';
-    src: url('Pixel-UniCode.woff2') format('woff2'),
-        url('Pixel-UniCode.woff') format('woff');
+    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
+        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+h1 {
+    font-size: 2em;
+    font-family: 'Pixel UniCode';
+}
+
 
 .dropdown {
     position: relative;
