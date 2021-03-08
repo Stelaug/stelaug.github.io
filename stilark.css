@@ -8,3 +8,17 @@ header {
     font-size: 40px;
 }
 
+/*Font*/
+@font-face {
+    font-family: 'Pixel UniCode';
+    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
+        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Pixel UniCode';
+}
