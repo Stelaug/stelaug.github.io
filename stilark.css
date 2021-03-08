@@ -1,11 +1,11 @@
-#nav {
+header {
     background-image: linear-gradient(to right, #090737, #390026, #640000);
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 /*Font*/
@@ -19,7 +19,6 @@
 }
 
 h1 {
-    font-size: 2em;
     font-family: 'Pixel UniCode';
 }
 
