@@ -25,15 +25,12 @@ h1 {
 
 /*Font*/
 @font-face {
-    font-family: 'gooddogregular';
-    src: url('gooddog-webfont.eot');
-    src: url('gooddog-webfont.eot?#iefix') format('embedded-opentype'),
-         url('gooddog-webfont.woff') format('woff'),
-         url('gooddog-webfont.ttf') format('truetype'),
-         url('gooddog-webfont.svg#gooddogregular') format('svg');
+    font-family: 'Pixel UniCode';
+    src: url('Pixel-UniCode.woff2') format('woff2'),
+        url('Pixel-UniCode.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 .dropdown {
