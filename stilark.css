@@ -1,5 +1,5 @@
 nav {
-    background-color: black;
+    background-image: linear-gradient(to right, #090737, #390026, #640000);
     color: white;
     display: flex;
     flex-direction: row;
@@ -10,7 +10,8 @@ nav {
 
 #front {
     position: absolute;
-    margin: 10px;
+    margin: 13px;
+
 }
 
 #back {
