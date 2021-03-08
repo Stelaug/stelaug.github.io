@@ -21,6 +21,12 @@ h1 {
     font-size: 2em;
 }
 
+.dropdown {
+    position: relative;
+    display: ;
+    height: auto;
+}
+
 .dropbtn {
     background-color: black;
     color: white;
@@ -32,10 +38,7 @@ h1 {
 .dropbtn:hover, .dropbtn:focus {
     background-color: #2c3236;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+
 .dropdown-content {
     display: none;
     position: absolute;
