@@ -22,3 +22,23 @@ h1 {
     font-size: 2em;
     font-family: 'Pixel UniCode';
 }
+
+#hsvart, #hvit {
+    display: block;
+    position: absolute;
+   }
+   h1 {
+    font-family: 'Pixel UniCode';
+    color: white;
+    margin-left: 0.5em;
+    font-size: 4vw;
+    letter-spacing: 0.1em;
+   }
+   /*dette er for den svart bakteksten, pls do not change names from hvit to hsvart pls*/
+   #hvit h1 { 
+    font-family: 'Pixel UniCode';
+    color: black;
+    font-size: 4.1vw;
+    transform: scale(1, 1.3);
+    font-stretch: semi-condensed;
+   }
