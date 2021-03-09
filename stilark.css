@@ -12,7 +12,7 @@ body {
     margin: 0px;
 }
 
-/*Font*/
+/*Font, hvis den trengs til ting lenger nede idk*/
 @font-face {
     font-family: 'Pixel UniCode';
     src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
