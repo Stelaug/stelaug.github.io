@@ -34,3 +34,8 @@ h1 {
     margin: 10px;
     margin-left: 100px;
 }
+
+.bilderhovedside {
+    max-width: 80%;
+    height: auto; 
+}
