@@ -5,7 +5,8 @@ header {
     flex-direction: row;
     align-items: center;
     font-size: 50px;
-    justify-content: flex-start;
+    justify-content: space-between;
+
 }
 
 body {
@@ -13,7 +14,23 @@ body {
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
 }
 
-/*Font, hvis den trengs til ting lenger nede idk*/
+.lastnedknapp {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    margin-right: 275px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.lastnedknapp:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.034);
+}
+
+/*, hvis den trengs til ting lenger nede idk*/
 @font-face {
     font-family: 'Pixel UniCode';
     src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
