@@ -38,4 +38,5 @@ h1 {
 .bilderhovedside {
     max-width: 80%;
     height: auto; 
+    margin: 5px;
 }
