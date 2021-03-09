@@ -4,8 +4,12 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     font-size: 50px;
+    justify-content: flex-start;
+}
+
+body {
+    margin: 0px;
 }
 
 /*Font*/
@@ -22,6 +26,11 @@ h1 {
     font-family: 'Pixel UniCode';
 }
 
-.nderskrift {
-    background-image: url('bilder/ndersTale.png');
+.nderstale {
+    flex: 1;
+    align-self:flex-start;
+    max-width: 30%;
+    height: auto;
+    margin: 10px;
+    margin-left: 100px;
 }
