@@ -23,10 +23,14 @@ body {
     font-display: swap;
 }
 
-h1 {
-    font-family: 'Pixel UniCode';
+
+/*vet ikke om denne trengs egt*/
+@media only screen and (max-width: 600px) {
+    .bilderhovedside { max-width: 100%;}
+    .nderstale {width: 70%;}
 }
 
+/*Brukes til bildene*/
 .nderstale {
     flex: 1;
     align-self:flex-start;
@@ -36,6 +40,7 @@ h1 {
     margin-left: 100px;
 }
 
+/*Det store bildet*/
 .bilderhovedside {
     max-width: 60%;
     width: 50%;
@@ -43,17 +48,17 @@ h1 {
     margin: 5px;
 }
 
-/*vet ikke om denne trengs egt*/
-@media only screen and (max-width: 600px) {
-    .bilderhovedside { max-width: 100%;}
-    .nderstale {width: 70%;}
+/*Til de små Andersene*/
+.småbilder {
+    max-width: 30%;
+    height: auto; 
+    margin: 5px;
 }
+
 
 .infobokser{
     flex-flow: wrap;
     display: flex;
-    justify-items: stretch;
-    align-items: stretch;
     width: 100%;
     flex-direction: column;
     color: white;
@@ -70,24 +75,21 @@ h1 {
 .boksto {
     order: 2;
     flex: 1;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 .bokstre {
     order: 3;
     flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 
 /*Dessa kan brukes til både bilder og tekst, gjør at de holder seg til høyre/venstre*/
-.left {
-    float:left;
-    font-family: 'Pixel UniCode';
-    font-size: 3vw;
-    flex: 1;
-}
+
 
 .right {
     float:right;
@@ -95,4 +97,10 @@ h1 {
     font-size: 3vw;
     flex: 1;
 
+}
+.left {
+    float:left;
+    font-family: 'Pixel UniCode';
+    font-size: 3vw;
+    flex: 1;
 }
