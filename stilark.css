@@ -43,6 +43,8 @@ h1 {
     
 }
 
+/*vet ikke om denne trengs egt*/
 @media only screen and (max-width: 600px) {
     .bilderhovedside { max-width: 100%;}
+    .nderstale {width: 50%;}
 }
