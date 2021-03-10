@@ -30,6 +30,21 @@ body {
     background-color: rgba(255, 255, 255, 0.034);
 }
 
+.lastnedknapp2 {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.lastnedknapp2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.034);
+}
+
 /*, hvis den trengs til ting lenger nede idk*/
 @font-face {
     font-family: 'Pixel UniCode';
