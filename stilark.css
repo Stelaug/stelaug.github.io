@@ -14,15 +14,18 @@ body {
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
 }
 
+#show_him a{
+    text-decoration: none;
+    color: red;
+}
+
 #show_him {
     background-color: #ffffff00;
     border: none;
     border-radius: 4px;
-    display: block;
-    color: red;
     transition: all 0.5s;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 3vw;
     font-family: 'Pixel UniCode';
 }
 
