@@ -192,8 +192,9 @@ header {
 /*lore nettsiden*/
 
 .loreverskrift {
-    
+    font-size: 50px;
 }
 .lore {
     color: white;
+    font-family: 'pixel unicode';
 }
