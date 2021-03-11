@@ -3,7 +3,7 @@ body {
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
     cursor: wait;
     /*crosshair*/
-    cursor: url(""), url("custom.cur"), default;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 header {
@@ -16,6 +16,11 @@ header {
     justify-content: space-between;
     position: fixed;
     background-attachment:fixed;
+    background-color:rgba(255, 255, 255, 0);
+}
+
+#header.stor {
+    background-color:rgba(255, 255, 255, 0.205);
 }
 
 /*Språk/accessibility/fargeblind knapp*/
@@ -128,7 +133,7 @@ header {
     width: 100%;
     flex-direction: column;
     color: white;
-    padding-top: 75px;
+    padding-top: 85px;
 }
 
 .boksen {
