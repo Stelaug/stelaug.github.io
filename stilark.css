@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+}
+
 header {
     /*background-image: linear-gradient(to right, #090737, #390026, #640000);*/
     color: white;
@@ -8,12 +13,37 @@ header {
     justify-content: space-between;
 
 }
+/*Språk/accessibility/fargeblind knapp*/
 
-body {
-    margin: 0px;
-    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+
+
+
+
+
+
+/*Knapper*/
+
+/*Store install-knappen til høyre*/
+.lastnedknapp {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
+.lastnedknapp:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+
+/*Knapp til lore-tekst "show him"*/
 #show_him a{
     text-decoration: none;
     color: red;
@@ -34,26 +64,8 @@ body {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-/*Store install-knappen*/
-.lastnedknapp {
-    background-color: #ffffff00;
-    border: none;
-    border-radius: 4px;
-    padding: 5px;
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
 
-.lastnedknapp:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);
-}
-
-/*Lille install-knappen*/
+/*Lille install-knappen midt i*/
 .lastnedknapp2 {
     background-color: #ffffff00;
     border: none;
@@ -71,26 +83,11 @@ body {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-/*, hvis den trengs til ting lenger nede idk*/
-@font-face {
-    font-family: 'Pixel UniCode';
-    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
-        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 
-/*mobil, knapper må krympe, Gud må vekk**/
-@media only screen and (max-width: 600px) {
-    .bilderhovedside { display:none;}
-    .småbilder {width: 2%;}
-    .nderstale {width: 70%;}
-    .lastnedknapp {width:2%;}
-}
+/*Bilder*/
 
-/*Brukes til bildene*/
+/*overskrift*/
 .nderstale {
     flex: 1;
     align-self:flex-start;
@@ -116,6 +113,10 @@ body {
 }
 
 
+
+/*layout*/
+
+/*container*/
 .infobokser{
     flex-flow: wrap;
     display: flex;
@@ -149,8 +150,6 @@ body {
 
 
 /*Dessa kan brukes til både bilder og tekst, gjør at de holder seg til høyre/venstre*/
-
-
 .right {
     float:right;
     font-family: 'Pixel UniCode';
@@ -164,3 +163,25 @@ body {
     font-size: 3vw;
     flex: 1;
 }
+
+
+/*Ting*/
+
+/*font, hvis den trengs til ting lenger nede idk*/
+@font-face {
+    font-family: 'Pixel UniCode';
+    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
+        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*mobil, knapper må krympe, Gud må vekk*/
+@media only screen and (max-width: 600px) {
+    .bilderhovedside, .lastnedknapp { display:none;}
+    .småbilder {width: 2%;}
+    .nderstale {width: 70%;}
+    
+}
+
