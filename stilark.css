@@ -93,7 +93,7 @@ header {
     align-self:flex-start;
     max-width: 30%;
     height: auto;
-    margin: 10px;
+    margin: 1vw;
     margin-left: 100px;
 }
 
@@ -108,7 +108,7 @@ header {
 /*Til de små Andersene*/
 .småbilder {
     max-width: 30%;
-    height: auto; 
+    height:auto;
     margin: 5px;
 }
 
@@ -181,7 +181,9 @@ header {
 @media only screen and (max-width: 600px) {
     .bilderhovedside, .lastnedknapp { display:none;}
     .småbilder {width: 2%;}
-    .nderstale {width: 100%;}
+    .nderstale {max-width:60%; justify-self: center;}
+    #show_him {padding:0;}
+    #show_him:hover {padding: 0;}
     
 }
 
