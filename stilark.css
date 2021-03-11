@@ -14,6 +14,7 @@ body {
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
 }
 
+/*Store install-knappen*/
 .lastnedknapp {
     background-color: #ffffff00;
     border: none;
@@ -32,6 +33,7 @@ body {
     background-color: rgba(255, 255, 255, 0.034);
 }
 
+/*Lille install-knappen*/
 .lastnedknapp2 {
     background-color: #ffffff00;
     border: none;
