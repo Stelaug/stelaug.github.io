@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+}
+
 header {
     /*background-image: linear-gradient(to right, #090737, #390026, #640000);*/
     color: white;
@@ -10,12 +15,14 @@ header {
 }
 
 
-/*Språk/accessibility knapp*/
+/*Språk/accessibility/fargeblind knapp*/
 
-body {
-    margin: 0px;
-    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
-}
+
+
+
+
+
+
 
 #show_him {
     background-color: #ffffff00;
