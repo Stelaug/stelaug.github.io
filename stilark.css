@@ -19,7 +19,7 @@ body {
     border: none;
     border-radius: 4px;
     display: block;
-    color: hotpink;
+    color: red;
     transition: all 0.5s;
     cursor: pointer;
     font-size: 50px;
@@ -28,7 +28,7 @@ body {
 
 #show_him:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: rgba(255, 255, 255, 0.116);
 }
 
 /*Store install-knappen*/
@@ -47,7 +47,7 @@ body {
 
 .lastnedknapp:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: rgba(255, 255, 255, 0.116);
 }
 
 /*Lille install-knappen*/
@@ -65,7 +65,7 @@ body {
 
 .lastnedknapp2:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: rgba(255, 255, 255, 0.116);
 }
 
 /*, hvis den trengs til ting lenger nede idk*/
