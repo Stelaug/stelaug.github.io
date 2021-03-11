@@ -195,7 +195,7 @@ header {
 .landerstale {
     flex: 1;
     align-self:flex-start;
-    max-width: 30%;
+    max-width: 40%;
     height: auto;
     margin: 1vw;
     margin-left: 100px;
