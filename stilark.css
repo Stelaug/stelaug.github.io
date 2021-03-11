@@ -198,3 +198,7 @@ header {
     color: white;
     font-family: 'pixel unicode';
 }
+
+.lunderskrift {
+    font-size: 3vw;
+}
