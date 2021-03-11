@@ -17,8 +17,8 @@ header {
     transition: 0.3s;
 }
 
-.return {
-    cursor: default;
+a {
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 #header.stor {
@@ -47,7 +47,6 @@ header {
     right: 10px;
     transition: all 0.5s;
     /*crosshair cursor*/
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 .lastnedknapp:hover {
@@ -67,10 +66,8 @@ header {
     border: none;
     border-radius: 4px;
     transition: all 0.5s;
-    cursor: pointer;
     font-size: 3vw;
     font-family: 'Pixel UniCode';
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 #show_him:hover {
@@ -86,7 +83,7 @@ header {
     border-radius: 4px;
     display: block;
     transition: all 0.5s;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;    display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -108,7 +105,6 @@ header {
     height: auto;
     margin: 1vw;
     margin-left: 100px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 /*Det store bildet*/
@@ -214,8 +210,7 @@ header {
     height: auto;
     margin: 1vw;
     margin-left: 100px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;}
-
+}
 /*overskrift*/
 .loreverskrift {
     font-size: 5vw;
