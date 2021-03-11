@@ -213,7 +213,36 @@ header {
 }
 
 /*p tekst*/
+
 .lunderskrift {
     font-size: 3vw;
 }
+
+/*Kul scroll animasjon?*/
+/*Nei, never again*/
+/*
+h1.splitting {
+    color: #84a8ff;
+}
+
+h1.splitting .char {
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+    transition: opacity 0.3s linear;;
+    transition-delay: calc( 20ms * var(--char-index) );
+}
+
+h1.splitting[data-scroll=out] .char {
+    opacity: 0.1;
+    transform: translateY(0.25em);
+}
+  
+  
+.page {
+    max-width: 30em;
+    margin: auto;
+    overflow: hidden;
+}
+*/
+
 
