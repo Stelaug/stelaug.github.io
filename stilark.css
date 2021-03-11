@@ -1,6 +1,9 @@
 body {
     margin: 0px;
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+    cursor: wait;
+    /*crosshair*/
+    cursor: url(""), url("custom.cur"), default;
 }
 
 header {
@@ -11,8 +14,10 @@ header {
     align-items: center;
     font-size: 50px;
     justify-content: space-between;
-
+    position: fixed;
+    background-attachment:fixed;
 }
+
 /*Språk/accessibility/fargeblind knapp*/
 
 
@@ -123,6 +128,7 @@ header {
     width: 100%;
     flex-direction: column;
     color: white;
+    padding-top: 75px;
 }
 
 .boksen {
