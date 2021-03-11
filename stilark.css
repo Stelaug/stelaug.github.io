@@ -191,14 +191,28 @@ header {
 
 /*lore nettsiden*/
 
-.loreverskrift {
-    font-size: 50px;
+/*andersTale bildet*/
+.landerstale {
+    flex: 1;
+    align-self:flex-start;
+    max-width: 30%;
+    height: auto;
+    margin: 1vw;
+    margin-left: 100px;
 }
+/*overskrift*/
+.loreverskrift {
+    font-size: 5vw;
+}
+
+/*all tekst*/
 .lore {
     color: white;
     font-family: 'pixel unicode';
 }
 
+/*p tekst*/
 .lunderskrift {
     font-size: 3vw;
 }
+
