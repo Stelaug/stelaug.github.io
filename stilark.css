@@ -63,8 +63,9 @@ body {
 /*mobil, knapper må krympe, Gud må vekk**/
 @media only screen and (max-width: 600px) {
     .bilderhovedside { display:none;}
+    .småbilder {width: 2%;}
     .nderstale {width: 70%;}
-    .lastnedknapp {width:10%;}
+    .lastnedknapp {width:2%;}
 }
 
 /*Brukes til bildene*/
