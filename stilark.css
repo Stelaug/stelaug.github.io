@@ -181,7 +181,7 @@ header {
 @media only screen and (max-width: 600px) {
     .bilderhovedside, .lastnedknapp { display:none;}
     .småbilder {width: 2%;}
-    .nderstale {width: 70%;}
+    .nderstale {width: 100%;}
     
 }
 
