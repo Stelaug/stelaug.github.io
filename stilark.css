@@ -114,7 +114,7 @@ header {
 
 
 
-/*layout*/
+/*Layout*/
 
 /*container*/
 .infobokser{
@@ -154,6 +154,7 @@ header {
     float:right;
     font-family: 'Pixel UniCode';
     font-size: 3vw;
+    margin-right:2vw;
     flex: 1;
 
 }
@@ -161,6 +162,7 @@ header {
     float:left;
     font-family: 'Pixel UniCode';
     font-size: 3vw;
+    margin-left:2vw;
     flex: 1;
 }
 
