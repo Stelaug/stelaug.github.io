@@ -60,10 +60,11 @@ body {
 }
 
 
-/*vet ikke om denne trengs egt*/
+/*mobil, knapper må krympe, Gud må vekk**/
 @media only screen and (max-width: 600px) {
-    .bilderhovedside { max-width: 100%;}
+    .bilderhovedside { display:none;}
     .nderstale {width: 70%;}
+    .lastnedknapp {width:10%;}
 }
 
 /*Brukes til bildene*/
