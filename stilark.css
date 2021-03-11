@@ -23,25 +23,9 @@ header {
 
 
 
+/*Knapper*/
 
-#show_him {
-    background-color: #ffffff00;
-    border: none;
-    border-radius: 4px;
-    display: block;
-    color: red;
-    transition: all 0.5s;
-    cursor: pointer;
-    font-size: 50px;
-    font-family: 'Pixel UniCode';
-}
-
-#show_him:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);
-}
-
-/*Store install-knappen*/
+/*Store install-knappen til høyre*/
 .lastnedknapp {
     background-color: #ffffff00;
     border: none;
@@ -60,7 +44,27 @@ header {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-/*Lille install-knappen*/
+
+/*Knapp til lore-tekst "show him"*/
+#show_him {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    color: red;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: 'Pixel UniCode';
+}
+
+#show_him:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+
+/*Lille install-knappen midt i*/
 .lastnedknapp2 {
     background-color: #ffffff00;
     border: none;
@@ -78,26 +82,11 @@ header {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-/*, hvis den trengs til ting lenger nede idk*/
-@font-face {
-    font-family: 'Pixel UniCode';
-    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
-        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 
-/*mobil, knapper må krympe, Gud må vekk**/
-@media only screen and (max-width: 600px) {
-    .bilderhovedside, .lastnedknapp { display:none;}
-    .småbilder {width: 2%;}
-    .nderstale {width: 70%;}
-    
-}
+/*Bilder*/
 
-/*Brukes til bildene*/
+/*overskrift*/
 .nderstale {
     flex: 1;
     align-self:flex-start;
@@ -123,6 +112,10 @@ header {
 }
 
 
+
+/*layout*/
+
+/*container*/
 .infobokser{
     flex-flow: wrap;
     display: flex;
@@ -156,8 +149,6 @@ header {
 
 
 /*Dessa kan brukes til både bilder og tekst, gjør at de holder seg til høyre/venstre*/
-
-
 .right {
     float:right;
     font-family: 'Pixel UniCode';
@@ -171,3 +162,25 @@ header {
     font-size: 3vw;
     flex: 1;
 }
+
+
+/*Ting*/
+
+/*font, hvis den trengs til ting lenger nede idk*/
+@font-face {
+    font-family: 'Pixel UniCode';
+    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
+        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*mobil, knapper må krympe, Gud må vekk*/
+@media only screen and (max-width: 600px) {
+    .bilderhovedside, .lastnedknapp { display:none;}
+    .småbilder {width: 2%;}
+    .nderstale {width: 70%;}
+    
+}
+
