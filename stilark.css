@@ -17,38 +17,25 @@ header {
     transition: 0.3s;
 }
 
+#header.stor {
+    background-color:rgba(255, 255, 255, 0.356);
+}
+
 a {
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
+
+/*Anders overskrift*/
 #overskrift {
     flex: 1;
     align-self:flex-start;
-    max-width: 35%;
+    max-width: 40%;
     height: auto;
     margin: 1vw;
     margin-left: 100px;
     margin-right: 100px;
 }
-
-#overskrift.stor {
-    max-width: 22%;
-}
-
-
-#header.stor {
-    background-color:rgba(255, 255, 255, 0.356);
-}
-
-/*Språk/accessibility/fargeblind knapp*/
-
-
-
-
-
-
-
-/*Knapper*/
 
 /*Store install-knappen til høyre*/
 .lastnedknapp {
@@ -64,15 +51,32 @@ a {
     /*crosshair cursor*/
 }
 
-
 .lastnedknapp:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-.lastnedknapp.stor {
-    max-width: 50%;
+/*Bildet til knappen*/
+#imgknapp {
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.5s;
+    background-color: #ffffff00;
+    align-self: center;
+    justify-self: center;
+    padding-left:10px;
+    padding-right: 0px;
+    max-width:70%;
 }
+
+/*Språk/accessibility/fargeblind knapp*/
+
+
+
+
+/*Knapper*/
+
 
 
 /*Knapp til lore-tekst "show him"*/
@@ -115,24 +119,7 @@ a {
 }
 
 
-
 /*Bilder*/
-
-/*overskrift*/
-.nderstale {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 35%;
-    height: auto;
-    margin: 1vw;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.nderstale.stor {
-    max-width: 25%;
-    height: auto;
-}
 
 /*Det store bildet*/
 .bilderhovedside {
@@ -160,7 +147,8 @@ a {
     width: 100%;
     flex-direction: column;
     color: white;
-    padding-top: 85px;
+    padding-top: 120px;
+    font-family: "pixel unicode";
 }
 
 .boksen {
@@ -238,21 +226,27 @@ a {
     margin: 1vw;
     margin-left: 100px;
 }
+
+
 /*overskrift*/
 .loreverskrift {
     font-size: 5vw;
 }
 
-/*all tekst*/
+/*Lore overskrift*/
 .lore {
-    color: white;
-    font-family: 'pixel unicode';
+    flex: 1;
+    align-self:flex-start;
+    max-width: 8%;
+    height:auto;
+    margin-left: 20px;
 }
 
 /*p tekst*/
 
 .lunderskrift {
     font-size: 3vw;
+    margin:10px 20px;
 }
 
 /*Kul scroll animasjon?*/
