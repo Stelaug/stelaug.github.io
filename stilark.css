@@ -21,8 +21,23 @@ a {
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
+#overskrift {
+    flex: 1;
+    align-self:flex-start;
+    max-width: 35%;
+    height: auto;
+    margin: 1vw;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#overskrift.stor {
+    max-width: 22%;
+}
+
+
 #header.stor {
-    background-color:rgba(255, 255, 255, 0.205);
+    background-color:rgba(255, 255, 255, 0.356);
 }
 
 /*Språk/accessibility/fargeblind knapp*/
@@ -55,6 +70,10 @@ a {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+.lastnedknapp.stor {
+    max-width: 50%;
+}
+
 
 /*Knapp til lore-tekst "show him"*/
 #show_him a{
@@ -69,6 +88,7 @@ a {
     transition: all 0.5s;
     font-size: 3vw;
     font-family: 'Pixel UniCode';
+    padding: 0px;
 }
 
 #show_him:hover {
@@ -107,6 +127,11 @@ a {
     margin: 1vw;
     margin-left: 100px;
     margin-right: 100px;
+}
+
+.nderstale.stor {
+    max-width: 25%;
+    height: auto;
 }
 
 /*Det store bildet*/
