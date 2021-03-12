@@ -37,20 +37,18 @@ a {
 
 /*Store install-knappen til høyre*/
 .lastnedknapp {
-    flex: 1;
     border: none;
     border-radius: 4px;
     display: inline-block;
-    height: auto;
     transition: all 0.5s;
+    background-color: #ffffff00;
+    align-self: center;
+    justify-self: center;
+    padding-left:10px;
+    padding-right: 0px;
     /*crosshair cursor*/
 }
 
-/*Til boksen rundt selve knappen*/
-.slastnedknapp {
-    background-color: #ffffff00;
-    max-width: 30%;
-}
 
 .lastnedknapp:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -104,7 +102,7 @@ a {
 .nderstale {
     flex: 1;
     align-self:flex-start;
-    max-width: 30%;
+    max-width: 35%;
     height: auto;
     margin: 1vw;
     margin-left: 100px;
