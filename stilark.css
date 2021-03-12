@@ -37,16 +37,18 @@ header {
 /*Store install-knappen til høyre*/
 .lastnedknapp {
     flex: 1;
-    background-color: #ffffff00;
     border: none;
     border-radius: 4px;
     display: inline-block;
-    max-width: 30%;
     height: auto;
-    margin: 1vw;
     transition: all 0.5s;
     cursor: pointer;
-    align-self:flex-end;
+}
+
+/*Til boksen rundt selve knappen*/
+.slastnedknapp {
+    background-color: #ffffff00;
+    max-width: 30%;
 }
 
 .lastnedknapp:hover {
