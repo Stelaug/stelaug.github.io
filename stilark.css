@@ -132,9 +132,8 @@ a {
 
 /*Det store bildet*/
 .bilderhovedside {
-    max-width: 60%;
-    width: 50%;
-    height: auto; 
+    max-width: 90%; 
+    height: inherit;
     margin: 5px;
 }
 
