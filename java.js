@@ -4,11 +4,12 @@ ScrollOut({
    targets: '[data-splitting]'
 });*/
 
+var infobokser = document.getElementsByClassName("infobokser");
 
-window.onscroll = function() {scrollFunction()};
+document.getElementsByClassName("infobokser").onscroll = function() {scrollFunction()};
 
    function scrollFunction() {
-    if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+    if (document.infobokser.scrollTop > 15) {
        document.getElementById("header").className = "stor";
     } else {
       document.getElementById("header").className = "";
