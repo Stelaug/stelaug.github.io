@@ -8,14 +8,12 @@ var infobokser = document.getElementsByClassName("infobokser");
 
 document.getElementsByClassName("infobokser").onscroll = function() {scrollFunction()};
 
-   function scrollFunction() {
+function scrollFunction() {
    console.log("kjører");
-    if (document.infobokser.scrollTop > 15) {
-       document.getElementById("header").className = "stor";
-    } else {
-      document.getElementById("header").className = "";
-
-      }
+   if (document.infobokser.scrollTop > 15) {
+      document.getElementById("header").className = "stor"; } 
+   else {
+      document.getElementById("header").className = ""; }
    }
 
 
@@ -24,7 +22,7 @@ document.getElementsByClassName("infobokser").onscroll = function() {scrollFunct
 
 
 
-/*test for shrink*/
+/*Original fra W3S
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -34,3 +32,4 @@ function scrollFunction() {
     document.getElementById("header").className = "";
   }
 }
+*/
