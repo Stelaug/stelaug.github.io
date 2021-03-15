@@ -8,6 +8,7 @@ html, body {
 body {
     background: linear-gradient(to bottom right, #090737, #2c0039, #5e033f,#640000);
     background-repeat: no-repeat;
+    overflow:hidden;
 }
 
 header {
@@ -18,11 +19,11 @@ header {
     align-items: center;
     font-size: 50px;
     justify-content: space-between;
-    line-height: 45px;
     transition: 0.3s;
     border-bottom-style:solid;
     border-color:white;
     border-width: 3px;
+    height:19%;
 }
 
 #header.stor {
@@ -155,7 +156,7 @@ a {
     flex-direction: column;
     color: white;
     font-family: "pixel unicode";
-    height: calc(100% - 45px);
+    height: 81%;
     
 }
 
