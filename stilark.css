@@ -31,7 +31,7 @@ header {
 }
 
 .liten {
-    #image {max-width:40%;}
+    image:10;
 }
 
 a {

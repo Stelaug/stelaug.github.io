@@ -1,10 +1,7 @@
-/*const dataSplitting = document.querySelector("data-splitting")
-Splitting();
-ScrollOut({
-   targets: '[data-splitting]'
-});*/
 
-var infobokser = document.getElementsByClassName("infobokser");
+
+/*test1*/
+/*var infobokser = document.getElementsByClassName("infobokser");
 
 document.getElementsByClassName("infobokser").onscroll = function() {scrollFunction()};
 
@@ -14,12 +11,25 @@ function scrollFunction() {
       document.getElementById("header").className = "stor"; } 
    else {
       document.getElementById("header").className = ""; }
-   }
+   }*/
 
 
 
 
 
+/*ny test*/
+var infobokser = document.getElementsByClassName("infobokser");
+document.getElementsByClassName("infobokser").onScroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.infobokser.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+   document.getElementById("header").classList.add('liten');
+   document.getElementById("header").classList.remove('liten');
+  } else {
+    document.getElementById("header").classList.add = ("");
+    document.getElementById("header").classList.remove("");
+  }
+}
 
 
 /*Original fra W3S
