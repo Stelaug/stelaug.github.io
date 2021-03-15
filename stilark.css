@@ -17,6 +17,9 @@ header {
     justify-content: space-between;
     line-height: 45px;
     transition: 0.3s;
+    border-bottom-style:solid;
+    border-color:white;
+    border-width: 3px;
 }
 
 #header.stor {
@@ -150,6 +153,7 @@ a {
     color: white;
     font-family: "pixel unicode";
     height: calc(100% - 45px);
+    
 }
 
 .infobokser .inner {
@@ -180,6 +184,7 @@ a {
     width: 100%;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 
