@@ -30,6 +30,10 @@ header {
     border-color:rgba(0, 0, 0, 0);
 }
 
+.liten {
+    #image {max-width:40%;}
+}
+
 a {
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
@@ -150,9 +154,8 @@ a {
 
 /*container*/
 .infobokser{
-    flex-flow: wrap;
+    flex-flow: column wrap;
     display: flex;
-    flex-direction: column;
     color: white;
     font-family: "pixel unicode";
     height: 81%;
