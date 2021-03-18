@@ -35,51 +35,49 @@ header {
 }
 
 a {
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
-    font-size: 60px;
-    position: inherit;
+    margin:20px;
+}
+
+figure {
+    margin: 0;
 }
 
 
 /*Anders overskrift*/
 #overskrift {
-    margin: 20px;
-    margin-bottom: 0;
-}
-
-/*Store install-knappen til høyre*/
-.lastnedknapp {
-    border: none;
-    border-radius: 4px;
-    display: inline-block;
+    flex: 1;
+    align-self:flex-start;
+    max-width: 40%;
+    height: auto;
+    margin: 1vw;
+    
     transition: all 0.5s;
-    background-color: #ffffff00;
-    align-self: center;
-    justify-self: center;
-    padding-left:10px;
-    padding-right: 0px;
-    /*crosshair cursor*/
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
-.lastnedknapp:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.116), 0 17px 50px 0 rgba(0,0,0,0.116);
+#overskrift:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+
 /*Bildet til knappen*/
 #imgknapp {
-    margin: 20px;
-    margin-bottom: 0;
-    border: none;
-    border-radius: 4px;
-    display: inline-block;
+    flex: 1;
+    align-self:flex-start;
+    max-width: 70%;
+    height: auto;
     transition: all 0.5s;
-    background-color: #ffffff00;
-    align-self: center;
-    justify-self: center;
-    padding-left:10px;
-    padding-right: 0px;
-    max-width:50%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+}
+
+#imgknapp:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
 }
 
 /*Språk/accessibility/fargeblind knapp*/
