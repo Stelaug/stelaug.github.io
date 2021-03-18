@@ -256,20 +256,21 @@ figure {
     font-size: 4vw;
 }
 
-.video {
+video {
     flex-direction: column;
-    margin-right: 5px;
 }
 
 /*Lore overskrift*/
 
 .lunderskrift {
     font-size: 2.3vw;
-    margin:10px 20px;
+    text-align: center;
 }
 
 .limage {
     margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Custom scrollbar*/
