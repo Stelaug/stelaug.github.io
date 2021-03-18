@@ -25,6 +25,10 @@ a {
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
+figure {
+    margin: 0;
+}
+
 
 /*Anders overskrift*/
 #overskrift {
