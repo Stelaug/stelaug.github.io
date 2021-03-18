@@ -10,3 +10,6 @@ mer header shit.
 
 15.03.21
 Har jobbet på ulike ikoner til språkinstillinger og jobbet videre på lore siden. La inn lore video.
+
+18.03.21
+enda mer header shit og en ny install knapp.
