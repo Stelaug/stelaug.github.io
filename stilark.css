@@ -272,6 +272,43 @@ figure {
     margin-top: 5%;
 }
 
+/*Custom scrollbar*/
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/*bakgrunn, vær samme farge, de er layered oppå hverandre, vet egt ikke forksjell?*/
+::-webkit-scrollbar-track {
+    background:rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+    background:rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+}
+
+/*tingen du drar*/
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(to bottom, #54033E, #5e033f,#640000);
+    border-radius: 10px;
+}
+
+/*små knapper øverst*/
+::-webkit-scrollbar-button {
+    background-size: 100%;
+    height: 17px;
+    width: 10px;
+}
+::-webkit-scrollbar-button:start {
+    background-image: url("bilder/AndersHD.png");
+}
+::-webkit-scrollbar-button:end {
+    background-image: url("bilder/FlipBlåAndersHD.png");
+}
+
+
+
 /*Kul scroll animasjon?*/
 /*Nei, never again*/
 /*
