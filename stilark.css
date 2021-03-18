@@ -87,6 +87,7 @@ figure {
     color: red;
     margin: 0;
     padding: 0;
+    
 }
 
 #show_him {
@@ -102,7 +103,8 @@ figure {
 
 #show_him:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);    
+    background-color: rgba(255, 255, 255, 0.116);   
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), defau
 }
 
 
