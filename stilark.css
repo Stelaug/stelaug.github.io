@@ -43,6 +43,10 @@ a {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+.installboks {
+    margin-right: 0%;
+}
+
 /*Store install-knappen til høyre*/
 .lastnedknapp {
     border: none;
@@ -53,7 +57,7 @@ a {
     align-self: center;
     justify-self: center;
     padding-left:10px;
-    padding-right: 0px;
+    padding-right: 0;
     /*crosshair cursor*/
 }
 
