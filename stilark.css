@@ -17,13 +17,13 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 50px;
     justify-content: space-between;
     transition: 0.3s;
     border-bottom-style:solid;
     border-color:white;
     border-width: 3px;
     height:19%;
+    
 }
 
 #header.stor {
@@ -36,18 +36,15 @@ header {
 
 a {
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    font-size: 60px;
+    position: inherit;
 }
 
 
 /*Anders overskrift*/
 #overskrift {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 40%;
-    height: auto;
-    margin: 1vw;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 20px;
+    margin-bottom: 0;
 }
 
 /*Store install-knappen til høyre*/
@@ -71,6 +68,8 @@ a {
 
 /*Bildet til knappen*/
 #imgknapp {
+    margin: 20px;
+    margin-bottom: 0;
     border: none;
     border-radius: 4px;
     display: inline-block;
@@ -80,7 +79,7 @@ a {
     justify-self: center;
     padding-left:10px;
     padding-right: 0px;
-    max-width:70%;
+    max-width:50%;
 }
 
 /*Språk/accessibility/fargeblind knapp*/
@@ -159,6 +158,7 @@ a {
     color: white;
     font-family: "pixel unicode";
     height: 81%;
+    
 }
 
 .infobokser .inner {
@@ -187,19 +187,16 @@ a {
 /*Dessa kan brukes til både bilder og tekst, gjør at de holder seg til høyre/venstre*/
 .right {
     float:right;
-    font-family: 'Pixel UniCode';
-    font-size: 3vw;
     margin-right:2vw;
     flex: 1;
-
+    font-size: 3vw;
 }
 .left {
     float:left;
-    font-family: 'Pixel UniCode';
-    font-size: 3vw;
     margin: 0;
     margin-left:2vw;
     flex: 1;
+    font-size: 3vw;
 }
 
 
@@ -258,6 +255,8 @@ a {
     .nderstale {max-width:60%; justify-self: center;}
     #show_him {padding:0;}
     #show_him:hover {padding: 0;}
+    header {justify-content: center;}
+    .infobokser {font-size: 7vw;}
     
 }
 
