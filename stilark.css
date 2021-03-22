@@ -78,6 +78,7 @@ figure {
 #imgknapp.stor {
     max-width:40%;
     margin:0;
+    margin-right: 50px;
 }
 
 /*Språk/accessibility/fargeblind knapp*/
@@ -222,7 +223,7 @@ figure {
 
 /*mobil, knapper må krympe, Gud må vekk*/
 @media only screen and (max-width: 600px) {
-    .bilderhovedside, .lastnedknapp { display:none;}
+    .bilderhovedside, .imgknapp { display:none;}
     .småbilder {width: 2%;}
     .nderstale {max-width:60%; justify-self: center;}
     #show_him {padding:0;}
