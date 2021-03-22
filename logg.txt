@@ -13,3 +13,6 @@ Har jobbet på ulike ikoner til språkinstillinger og jobbet videre på lore sid
 
 18.03.21
 enda mer header shit og en ny install knapp.
+
+22.03.21
+mer header shit, men tror vi har funnet en grei header no. Har også oppdatert lore siden sånn at den ser bedre ut.
