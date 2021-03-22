@@ -49,8 +49,8 @@ figure {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-.installboks {
-    margin-right: 0%;
+#overskrift.stor {
+    max-width: 30%;
 }
 
 /*Store install-knappen til høyre*/
@@ -60,6 +60,7 @@ figure {
     align-self:flex-start;
     max-width: 70%;
     height: auto;
+
     transition: all 0.5s;
     padding: 5px 10px;
     border-radius: 10px;
@@ -71,6 +72,9 @@ figure {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+#imgknapp.stor {
+    max-width:60%;
+}
 
 /*Språk/accessibility/fargeblind knapp*/
 
