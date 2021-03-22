@@ -278,10 +278,10 @@ video {
     height: 17px;
     width: 10px;
 }
-::-webkit-scrollbar-button:start {
-    background-image: url("bilder/AndersHD.png");
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    background-image: url("bilder/andershd.png");
 }
-::-webkit-scrollbar-button:end {
+::-webkit-scrollbar-button:single-button:vertical:increment {
     background-image: url("bilder/FlipBlåAndersHD.png");
 }
 
