@@ -17,7 +17,7 @@ header {
 }
 
 #header.stor {
-    background-color:rgba(255, 255, 255, 0.815);
+    background-color:rgba(255, 255, 255, 0.966);
 }
 /*
 a {
@@ -80,6 +80,11 @@ figure {
     margin-right: 50px;
 }
 
+#instbtn {
+    margin:0;
+}
+
+
 /*Språk/accessibility/fargeblind knapp*/
 
 
@@ -95,7 +100,7 @@ figure {
     color: red;
     margin: 0;
     padding: 0;
-    
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 #show_him {
@@ -106,18 +111,19 @@ figure {
     font-size: 3vw;
     font-family: 'Pixel UniCode';
     padding: 0px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    
 }
 
 #show_him:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);   
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), defau
+
 }
 
 
 /*Lille install-knappen midt i*/
 .lastnedknapp2 {
+    flex:1;
     background-color: #ffffff00;
     border: none;
     border-radius: 4px;
@@ -126,6 +132,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 20%;
 }
 
 .lastnedknapp2:hover {
@@ -182,7 +189,6 @@ figure {
     font-size: 3vw;
     margin-right:2vw;
     flex: 1;
-
 }
 .left {
     float:left;
@@ -209,33 +215,13 @@ figure {
 @media only screen and (max-width: 600px) {
     .bilderhovedside, .imgknapp { display:none;}
     .småbilder {width: 2%;}
-    .nderstale {max-width:60%; justify-self: center;}
+    #overskrift {align-self:center; max-width: 40%; margin: 2px 0px 0px 4px; padding: 0px;}
     #show_him {padding:0;}
     #show_him:hover {padding: 0;}
-    
+    #instbtn {display:none;}
 }
 
-/*lore nettsiden*/
-
-/*p tekst*/
-.lore {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 8%;
-    height:auto;
-    margin-left: 20px;
-}
-
-/*andersTale bildet*/
-.landerstale {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 40%;
-    height: auto;
-    margin: 1vw;
-    margin-left: 100px;
-}
-
+/*Lore nettsiden----------------------------------------------------------------*/
 
 /*overskrift*/
 .loreverskrift {
@@ -248,16 +234,23 @@ video {
 
 /*Lore overskrift*/
 
+.loverskrift {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    align-self:flex-start;
+    max-width: 8%;
+    height:auto;
+}
+
 .lunderskrift {
     font-size: 2.3vw;
     text-align: center;
 }
 
-.limage {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 
 /*Custom scrollbar*/
 
