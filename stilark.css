@@ -14,6 +14,7 @@ header {
     background-attachment:fixed;
     background-color:rgba(255, 255, 255, 0);
     transition: 0.3s;
+    margin: 1em;
 }
 
 #header.stor {
@@ -35,11 +36,8 @@ figure {
     align-self:flex-start;
     max-width: 50%;
     height: auto;
-    
-    
     transition: all 0.5s;
-    padding: 0px 2px;
-    margin: 0px;
+    padding: 8px 2px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
@@ -214,12 +212,13 @@ figure {
 
 /*mobil, knapper må krympe, Gud må vekk*/
 @media only screen and (max-width: 600px) {
-    .bilderhovedside, .imgknapp { display:none;}
+    .bilderhovedside, #instbtn { display:none;}
     .småbilder {width: 2%;}
-    #overskrift {align-self:center; max-width: 40%; margin: 2px 0px 0px 4px; padding: 0px;}
+    #header {justify-content: center; height: fit-content; margin: 0;}
+    #overskrift {align-self:center; max-width: 60%; justify-self: center; padding:0px 4px; }
     #show_him {padding:0;}
     #show_him:hover {padding: 0;}
-    #instbtn {display:none;}
+    
 }
 
 /*Lore nettsiden----------------------------------------------------------------*/
