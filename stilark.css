@@ -18,7 +18,7 @@ header {
 }
 
 #header.stor {
-    background-color:rgba(255, 255, 255, 0.63);
+    background-color:rgba(255, 255, 255, 0.815);
 }
 
 a {
@@ -34,7 +34,7 @@ figure {
 #overskrift {
     flex: 1;
     align-self:flex-start;
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     margin: 1vw;
     
@@ -50,7 +50,8 @@ figure {
 }
 
 #overskrift.stor {
-    max-width: 30%;
+    max-width: 40%;
+    margin:0;
 }
 
 /*Store install-knappen til høyre*/
@@ -58,8 +59,10 @@ figure {
 #imgknapp {
     flex: 1;
     align-self:flex-start;
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
+    margin: 1vw;
+    float: right;
 
     transition: all 0.5s;
     padding: 5px 10px;
@@ -73,7 +76,8 @@ figure {
 }
 
 #imgknapp.stor {
-    max-width:60%;
+    max-width:40%;
+    margin:0;
 }
 
 /*Språk/accessibility/fargeblind knapp*/
