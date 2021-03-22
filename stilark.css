@@ -9,7 +9,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 50px;
     justify-content: space-between;
     position: fixed;
     background-attachment:fixed;
@@ -18,13 +17,13 @@ header {
 }
 
 #header.stor {
-    background-color:rgba(255, 255, 255, 0.63);
+    background-color:rgba(255, 255, 255, 0.966);
 }
-
+/*
 a {
     margin:20px;
 }
-
+*/
 figure {
     margin: 0;
 }
@@ -34,7 +33,7 @@ figure {
 #overskrift {
     flex: 1;
     align-self:flex-start;
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     margin: 1vw;
     
@@ -49,14 +48,21 @@ figure {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+#overskrift.stor {
+    max-width: 40%;
+    margin:0;
+}
 
 /*Store install-knappen til høyre*/
 
 #imgknapp {
     flex: 1;
     align-self:flex-start;
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
+    margin: 1vw;
+    float: right;
+
     transition: all 0.5s;
     padding: 5px 10px;
     border-radius: 10px;
@@ -94,7 +100,7 @@ figure {
     color: red;
     margin: 0;
     padding: 0;
-    
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
 
 #show_him {
@@ -105,18 +111,19 @@ figure {
     font-size: 3vw;
     font-family: 'Pixel UniCode';
     padding: 0px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    
 }
 
 #show_him:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);   
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), defau
+
 }
 
 
 /*Lille install-knappen midt i*/
 .lastnedknapp2 {
+    flex:1;
     background-color: #ffffff00;
     border: none;
     border-radius: 4px;
@@ -125,18 +132,12 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 20%;
 }
 
 .lastnedknapp2:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);
-}
-
-.anderstail {
-    text-decoration: none;
-    
-    color: white;
-    text-indent: 30px;
 }
 
 
@@ -180,6 +181,7 @@ figure {
     flex-direction: row;
 }
 
+
 /*Dessa kan brukes til både bilder og tekst, gjør at de holder seg til høyre/venstre*/
 .right {
     float:right;
@@ -187,7 +189,6 @@ figure {
     font-size: 3vw;
     margin-right:2vw;
     flex: 1;
-
 }
 .left {
     float:left;
@@ -218,42 +219,9 @@ figure {
     #show_him {padding:0;}
     #show_him:hover {padding: 0;}
     #instbtn {display:none;}
-    
 }
 
-/*lore nettsiden*/
-
-.linfobokser {
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    color: white;
-    padding-top: 8vw;
-    font-family: "pixel unicode";
-}
-
-/*p tekst*/
-.lore {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 8%;
-    height:auto;
-    margin-left: 20px;
-}
-
-/*andersTale bildet*/
-.landerstale {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 40%;
-    height: auto;
-    margin: 1vw;
-    margin-left: 100px;
-}
-
+/*Lore nettsiden----------------------------------------------------------------*/
 
 /*overskrift*/
 .loreverskrift {
@@ -266,16 +234,23 @@ video {
 
 /*Lore overskrift*/
 
+.loverskrift {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    align-self:flex-start;
+    max-width: 8%;
+    height:auto;
+}
+
 .lunderskrift {
     font-size: 2.3vw;
     text-align: center;
 }
 
-.limage {
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 
 /*Custom scrollbar*/
 
@@ -305,10 +280,10 @@ video {
     height: 17px;
     width: 10px;
 }
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-    background-image: url("bilder/andershd.png");
+::-webkit-scrollbar-button:start {
+    background-image: url("bilder/AndersHD.png");
 }
-::-webkit-scrollbar-button:single-button:vertical:increment {
+::-webkit-scrollbar-button:end {
     background-image: url("bilder/FlipBlåAndersHD.png");
 }
 
