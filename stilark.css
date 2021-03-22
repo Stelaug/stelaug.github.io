@@ -35,10 +35,11 @@ figure {
     align-self:flex-start;
     max-width: 50%;
     height: auto;
-    margin: 1vw;
+    
     
     transition: all 0.5s;
-    padding: 5px 10px;
+    padding: 0px 2px;
+    margin: 0px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
@@ -58,13 +59,13 @@ figure {
 #imgknapp {
     flex: 1;
     align-self:flex-start;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     margin: 1vw;
     float: right;
 
     transition: all 0.5s;
-    padding: 5px 10px;
+    padding: 2px 0px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
@@ -75,7 +76,7 @@ figure {
 }
 
 #imgknapp.stor {
-    max-width:40%;
+    max-width:50%;
     margin:0;
     margin-right: 50px;
 }
