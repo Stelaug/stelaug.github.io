@@ -14,7 +14,7 @@ header {
     background-attachment:fixed;
     background-color:rgba(255, 255, 255, 0);
     transition: 0.3s;
-    margin: 1em;
+    margin: 0;
 }
 
 #header.stor {
@@ -40,6 +40,7 @@ figure {
     padding: 8px 2px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    margin: 1em;
 }
 
 #overskrift:hover {
@@ -63,7 +64,7 @@ figure {
     float: right;
 
     transition: all 0.5s;
-    padding: 2px 0px;
+    padding: 0px 5px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
