@@ -125,6 +125,13 @@ figure {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+.anderstail {
+    text-decoration: none;
+    
+    color: white;
+    text-indent: 30px;
+}
+
 
 /*Bilder*/
 
@@ -207,6 +214,18 @@ figure {
 }
 
 /*lore nettsiden*/
+
+.linfobokser {
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    padding-top: 8vw;
+    font-family: "pixel unicode";
+}
 
 /*p tekst*/
 .lore {
