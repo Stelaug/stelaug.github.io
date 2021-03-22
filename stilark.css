@@ -71,6 +71,16 @@ figure {
     background-color: rgba(255, 255, 255, 0.116);
 }
 
+#imgknapp.stor {
+    max-width:40%;
+    margin:0;
+    margin-right: 50px;
+}
+
+#instbtn {
+    margin:0;
+}
+
 
 /*Språk/accessibility/fargeblind knapp*/
 
@@ -205,11 +215,12 @@ figure {
 
 /*mobil, knapper må krympe, Gud må vekk*/
 @media only screen and (max-width: 600px) {
-    .bilderhovedside, .lastnedknapp { display:none;}
+    .bilderhovedside, .imgknapp { display:none;}
     .småbilder {width: 2%;}
-    .nderstale {max-width:60%; justify-self: center;}
+    #overskrift {align-self:center; max-width: 40%; margin: 2px 0px 0px 4px; padding: 0px;}
     #show_him {padding:0;}
     #show_him:hover {padding: 0;}
+    #instbtn {display:none;}
     
 }
 
