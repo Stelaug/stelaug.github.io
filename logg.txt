@@ -4,7 +4,6 @@ Lagde sketch og kom opp med ideer for utseende til nettsiden. Lagde github repos
 08.03.21
 Begynte på oppsettet til nettsiden, . La inn bilder, lore, 
 
-
 11.03.21
 mer header shit.
 

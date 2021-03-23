@@ -235,6 +235,15 @@ video {
     flex-direction: column;
 }
 
+.linfobokser {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 8vw;
+    font-family: "pixel unicode";
+    align-items: center;
+}
+
 /*Lore overskrift*/
 
 .loverskrift {
