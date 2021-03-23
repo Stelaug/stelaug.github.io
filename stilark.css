@@ -233,6 +233,7 @@ figure {
 
 video {
     flex-direction: column;
+    outline: none;
 }
 
 .linfobokser {
