@@ -293,7 +293,7 @@ video {
     width: 10px;
 }
 ::-webkit-scrollbar-button:start {
-    background-image: url("bilder/AndersHD.png");
+    background-image: url("bilder/andershd.png");
 }
 ::-webkit-scrollbar-button:end {
     background-image: url("bilder/FlipBlåAndersHD.png");
