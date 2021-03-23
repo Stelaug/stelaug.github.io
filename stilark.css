@@ -133,6 +133,8 @@ figure {
     align-items: center;
     justify-content: center;
     max-width: 20%;
+    text-decoration: none;
+    color: white;
 }
 
 .lastnedknapp2:hover {
