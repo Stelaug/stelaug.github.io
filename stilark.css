@@ -20,11 +20,7 @@ header {
 #header.stor {
     background-color:rgba(255, 255, 255, 0.548);
 }
-/*
-a {
-    margin:20px;
-}
-*/
+
 figure {
     margin: 0;
     align-self: center;
@@ -76,13 +72,13 @@ figure {
 }
 
 #imgknapp.stor {
-    max-width:50%;
+    max-width:60%;
     margin:0;
     margin-right: 50px;
 }
 
 #instbtn {
-    margin:0;
+    
 }
 
 
@@ -277,6 +273,7 @@ video {
 
 .middle .inner {
     height:100%;
+    
 }
 
 .glow {
