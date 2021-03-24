@@ -19,3 +19,21 @@ window.onscroll = function() {scrollFunction()};
 
       }
    }
+
+
+
+   var myVideo=document.getElementById("video");
+   document.addEventListener("keyup", function(event) {
+      
+      if (event.key === ' ') {
+         event.preventDefault();
+         myVideo.pause(); 
+         
+      }
+      else if (myVideo.paused) {
+      myVideo.play();
+      }
+      else {myVideo.play();
+      }
+    });
+   

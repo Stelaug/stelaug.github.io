@@ -213,25 +213,8 @@ figure {
     font-display: swap;
 }
 
-/*mobil, knapper må krympe, Gud må vekk*/
-@media only screen and (max-width: 600px) {
-    .bilderhovedside, .instbtn { display:none;}
-    .småbilder {width: 2%;}
-    #header {top:0;}
-    #overskrift { max-width: 60%; justify-self: center; padding:4px 4px; margin:0.5em;}
-    .infobokser {margin-top: 1em;}
-    #show_him {padding:0;}
-    #show_him:hover {padding: 0;}
-    video {height: 200px;}
-    
-}
-
 /*Lore nettsiden----------------------------------------------------------------*/
 
-/*overskrift*/
-.loreverskrift {
-    font-size: 4vw;
-}
 
 .vidonclick {
     order: 2;
@@ -244,8 +227,7 @@ video {
     border-radius: 10px;
     margin: 10px;
     order: 3;
-    width: 60%; 
-    height: 600px;
+    width: 40%; 
 }
     
 
@@ -313,33 +295,17 @@ video {
     background-image: url("bilder/FlipBlåAndersHD.png");
 }
 
-
-
-/*Kul scroll animasjon?*/
-/*Nei, never again*/
-/*
-h1.splitting {
-    color: #84a8ff;
+/*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
+@media only screen and (max-width: 600px) {
+    .bilderhovedside, .instbtn { display:none;}
+    .småbilder {width: 2%;}
+    #header {top:0;}
+    #overskrift, { max-width: 60%; justify-self: center; padding:4px 4px; margin:0.5em;}
+    .infobokser {margin-top: 1em;}
+    #show_him {padding:0;}
+    #show_him:hover {padding: 0;}
+    .lunderskrift {font-size: 6vw;}
+    .loverskrift {max-width:20%}
+    #video,  {width: 50%; }
+    
 }
-
-h1.splitting .char {
-    opacity: 0;
-    transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1);
-    transition: opacity 0.3s linear;;
-    transition-delay: calc( 20ms * var(--char-index) );
-}
-
-h1.splitting[data-scroll=out] .char {
-    opacity: 0.1;
-    transform: translateY(0.25em);
-}
-  
-  
-.page {
-    max-width: 30em;
-    margin: auto;
-    overflow: hidden;
-}
-*/
-
-
