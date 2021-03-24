@@ -336,9 +336,10 @@ video {
     .bilderhovedside, #imgknapp { display:none;}
     .småbilder {width: 2%;}
     #header {top:0;}
-    #overskrift { max-width: 60%;
+    #overskrift { max-width: 100%;
         padding:4px 4px;
         margin-top:1vw;}
+    #overskrift.stor {max-width:80%;}
     .infobokser {margin-top: 1em;}
     #show_him {padding:0;}
     #show_him:hover {padding: 0;}
