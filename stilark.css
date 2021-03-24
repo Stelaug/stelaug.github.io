@@ -270,11 +270,13 @@ video {
 }
 
 .middle {
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 20vw;
+}
+
+.middle .inner {
+    height:100%;
 }
 
 .glow {
@@ -282,6 +284,8 @@ video {
     color: #fff;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
   }
   
   @-webkit-keyframes glow {
