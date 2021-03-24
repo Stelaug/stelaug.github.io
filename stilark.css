@@ -333,11 +333,10 @@ video {
 
 /*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
 @media only screen and (max-width: 600px) {
-    .bilderhovedside, .instbtn { display:none;}
+    .bilderhovedside, #imgknapp { display:none;}
     .småbilder {width: 2%;}
     #header {top:0;}
     #overskrift { max-width: 60%;
-        
         padding:4px 4px;
         margin-top:1vw;}
     .infobokser {margin-top: 1em;}
