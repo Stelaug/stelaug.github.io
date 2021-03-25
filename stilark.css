@@ -77,9 +77,9 @@ figure {
     margin-right: 50px;
 }
 
-#instbtn {
+/*#instbtn {
     
-}
+}*/
 
 
 /*Språk/accessibility/fargeblind knapp*/
@@ -89,10 +89,12 @@ figure {
 
 /*Knapper*/
 
-
+a {
+    cursor:default;
+}
 
 /*Knapp til lore-tekst "show him"*/
-#show_him a{
+#show_him a {
     text-decoration: none;
     color: red;
     margin: 0;
@@ -334,7 +336,7 @@ video {
 /*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
 @media only screen and (max-width: 600px) {
     .bilderhovedside, #imgknapp { display:none;}
-    .småbilder {width: 2%;}
+    /*.småbilder {max-width: 20%;}*/
     #header {top:0;}
     #overskrift {
         max-width: 100%;
