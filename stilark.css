@@ -257,6 +257,7 @@ video {
 
 .glow {
     font-size: 80px;
+    font-family: 'Pixel UniCode' ;
     height: 100vh;
     animation: glow 0.75s ease-in-out infinite alternate;
 }
