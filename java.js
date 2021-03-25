@@ -22,7 +22,7 @@ window.onscroll = function() {scrollFunction()};
 
 
 
-   var myVideo=document.getElementById("video");
+   /*var myVideo=document.getElementById("video");
    document.addEventListener("keyup", function(event) {
       
       if (event.key === ' ') {
@@ -35,5 +35,5 @@ window.onscroll = function() {scrollFunction()};
       }
       else {myVideo.play();
       }
-    });
+    });*/
    
