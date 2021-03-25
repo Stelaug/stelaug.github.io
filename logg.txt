@@ -15,3 +15,6 @@ enda mer header shit og en ny install knapp.
 
 22.03.21
 mer header shit, men tror vi har funnet en grei header no. Har også oppdatert lore siden sånn at den ser bedre ut.
+
+25.03.21
+Ryddet i css for å gjøre det lettere å lese. Startet en ny branch der vi tester ut css grids og ser hvordan det ser ut.
