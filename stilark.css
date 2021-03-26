@@ -1,51 +1,164 @@
 body {
+    width:100vw;
     margin: 0px;
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
 }
 
-header {
-    /*background-image: linear-gradient(to right, #090737, #390026, #640000);*/
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    background-attachment:fixed;
-    background-color:rgba(255, 255, 255, 0);
+/*Grids ---------------------------------------------------------------->*/
+.grid-container {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      "Lore Lore Lore"
+      "Lore Lore Lore"
+      "Lore Lore Lore"
+      "Last-ned Last-ned Last-ned"
+      "Last-ned Last-ned Last-ned"
+      "Among-us Among-us Among-us"
+      "Among-us Among-us Among-us"
+      "Stats Stats Stats"
+      "Stats Stats Stats"
+      "Support Support Support"
+      "Support Support Support";
+  }
+
+#headeren {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "Overskrift Overskrift InstallKnapp"
+    "Overskrift Overskrift InstallKnapp";
+    grid-area: Headeren;
     transition: 0.3s;
-    margin: 0px;
-}
-
-#header.stor {
-    background-color:rgba(255, 255, 255, 0.548);
-}
-
-figure {
-    margin: 0;
-    align-self: center;
-}
-
-
-/*Anders overskrift*/
-#overskrift {
-    max-width: 50%;
-    height: auto;
-    transition: all 0.5s;
-    padding: 8px 2px;
-    border-radius: 10px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
-    margin: 1em;
+    position: fixed;
     
 }
 
-#overskrift:hover {
+#headeren.stor {
+    background-color:rgba(255, 255, 255, 0.548);
+    background-attachment:fixed;
+}
+
+/*<!--på mobil: grid-template-areas:". Overskrift ."". Overskrift .";-->*/
+
+.InstallKnapp { grid-area: InstallKnapp; }
+
+.Overskrift { grid-area: Overskrift; }
+
+.Lore {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "LoreTekst LoreTekst LoreBilde"
+      "LoreTekst LoreTekst LoreBilde";
+    grid-area: Lore;
+    
+}
+  
+.LoreTekst {
+    grid-area: LoreTekst;
+    font-size:4vw;
+    color:white;
+    margin-left: 10px;
+    font-family:'pixel unicode';}
+  
+.LoreBilde { grid-area: LoreBilde; }
+  
+.Last-ned {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Bilde1 A1 A2"
+      "Bilde1 A1 A2";
+    grid-area: Last-ned;
+}
+  
+.Bilde1 { grid-area: Bilde1; }
+  
+.A1 { grid-area: A1; }
+  
+.A2 { grid-area: A2; }
+  
+.Among-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "AboutUsTekst AboutUsTekst AboutUsBilde"
+      "AboutUsTekst AboutUsTekst AboutUsBilde";
+    grid-area: Among-us;
+}
+  
+.AboutUsTekst { grid-area: AboutUsTekst; }
+  
+.AboutUsBilde { grid-area: AboutUsBilde; }
+  
+.Stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "StatsBilde StatsTekst StatsTekst"
+      "StatsBilde StatsTekst StatsTekst";
+    grid-area: Stats;
+}
+  
+.StatsBilde { grid-area: StatsBilde; }
+  
+.StatsTekst { grid-area: StatsTekst; }
+  
+.Support {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "SupportTekst SupportTekst SupportBilde"
+      "SupportTekst SupportTekst SupportBilde";
+    grid-area: Support;
+}
+  
+.SupportTekst { grid-area: SupportTekst; }
+  
+.SupportBilde { grid-area: SupportBilde; }
+
+figure {
+    padding: 0;
+    margin:0;
+}
+
+/*Anders overskrift*/
+#overskriftbilde {
+    width:70%;
+    height: auto;
+    transition: all 0.5s;
+    padding: 8px 8px;
+    border-radius: 10px;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    
+    
+}
+
+#overskriftbilde:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);
 }
 
-#overskrift.stor {
-    max-width: 40%;
+#overskriftbilde.stor {
+    width: 55%;
     margin-bottom:0;
     
 }
@@ -53,15 +166,10 @@ figure {
 /*Store install-knappen til høyre*/
 
 #imgknapp {
-    flex: 1;
-    align-self:flex-start;
-    max-width: 70%;
+    width: 70%;
     height: auto;
-    margin: 1vw;
-    float: right;
-
     transition: all 0.5s;
-    padding: 0px 5px;
+    padding: 8px 8px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
@@ -72,10 +180,19 @@ figure {
 }
 
 #imgknapp.stor {
-    max-width:60%;
-    margin:0;
-    margin-right: 50px;
+    width:50%;
 }
+
+/*Bildet med big G*/
+.bilderhovedside {
+    width: 100%;
+    height: auto; 
+    margin: 5px;
+}
+
+
+
+
 
 /*#instbtn {
     
@@ -89,12 +206,12 @@ figure {
 
 /*Knapper*/
 
-a {
+/*a {
     cursor:default;
 }
 
 /*Knapp til lore-tekst "show him"*/
-#show_him a {
+/*#show_him a {
     text-decoration: none;
     color: red;
     margin: 0;
@@ -121,7 +238,7 @@ a {
 
 
 /*Lille install-knappen midt i*/
-.lastnedknapp2 {
+/*.lastnedknapp2 {
     flex:1;
     background-color: #ffffff00;
     border: none;
@@ -147,17 +264,9 @@ a {
 }
 
 
-/*Bilder*/
 
-/*Det store bildet*/
-.bilderhovedside {
-    max-width: 60%;
-    width: 50%;
-    height: auto; 
-    margin: 5px;
-}
 
-/*Til de små Andersene*/
+/*
 .småbilder {
     max-width: 30%;
     height:auto;
@@ -166,9 +275,6 @@ a {
 
 
 
-/*Layout*/
-
-/*container*/
 .infobokser{
     flex-flow: wrap;
     display: flex;
@@ -187,8 +293,6 @@ a {
     flex-direction: row;
 }
 
-
-/*Dessa kan brukes til både bilder og tekst, gjør at de holder seg til høyre/venstre*/
 .right {
     float:right;
     font-family: 'Pixel UniCode';
@@ -204,10 +308,6 @@ a {
     flex: 1;
 }
 
-
-/*Ting*/
-
-/*font, hvis den trengs til ting lenger nede idk*/
 @font-face {
     font-family: 'Pixel UniCode';
     src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
@@ -217,7 +317,6 @@ a {
     font-display: swap;
 }
 
-/*Lore nettsiden----------------------------------------------------------------*/
 
 
 .vidonclick {
@@ -244,7 +343,7 @@ video {
     align-items: center;
 }
 
-/*Lore overskrift*/
+
 
 .loverskrift {
     margin-top: 2.5%;
@@ -260,8 +359,6 @@ video {
     display: flex;
     order: 4;
 }
-
-/* Highscore nettsiden-----------------------------------------------------*/
 
 .scoreboard {
     background-color: black;
@@ -296,7 +393,7 @@ video {
     }
   }
 
-
+*/
 /*Custom scrollbar*/
 
 ::-webkit-scrollbar {
@@ -350,7 +447,5 @@ video {
     .lunderskrift {font-size: 6vw;}
     .loverskrift {max-width:20%}
     #video {width: 50%; }
-    figure {
-        flex:1;
-        justify-self: center;}
+    
 }
