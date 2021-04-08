@@ -48,6 +48,7 @@ body {
 #headeren.stor {
     background-color:rgba(255, 255, 255, 0.548);
     background-attachment:fixed;
+
 }
 
 /*<!--på mobil: grid-template-areas:". Overskrift ."". Overskrift .";-->*/
@@ -57,13 +58,14 @@ body {
 
 /*Anders overskrift*/
 #overskriftbilde {
-    width:63%;
+    width:100%;
     margin:1vw;
     height: auto;
     transition: all 0.5s;
     padding: 12px 8px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    float:left;
 }
 
 #overskriftbilde:hover {
@@ -72,15 +74,36 @@ body {
 }
 
 #overskriftbilde.stor {
-    width: 43%;
-    margin:10px;
+    width: 60%;
+    margin:0px 10px;
 }
 
 /*Store install-knappen til høyre*/
 .InstallKnapp { grid-area: InstallKnapp; }
 
-#imgknapp {
+/*Dette trengs for at anchor tag'en skal holde seg omtrent over bildene (read: utenfor fra nettsiden, knappene fungere helt fint men ingen klikkbare områder utenfor dem, winwin*/
+.figuranchor {
+    padding: 0px;
     width: 60%;
+}
+
+.right {float: right;}
+
+.figuranchor a{
+    text-decoration: none;
+    color: red;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display:block;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    background-image: url("bilder/AndersInstallHDSvart.png");
+}
+
+
+#imgknapp {
+    width: 100%;
     margin: 1vw;
     float:right;
     height: auto;
@@ -96,8 +119,8 @@ body {
 }
 
 #imgknapp.stor {
-    width:40%;
-    margin:10px;
+    width:60%;
+    margin:0px 10px;
 }
 
 
@@ -228,130 +251,7 @@ figure {
 
 
 
-
-/*#instbtn {
-    
-}*/
-
-
 /*Språk/accessibility/fargeblind knapp*/
-
-
-
-
-/*Knapper*/
-
-/*a {
-    cursor:default;
-}
-
-/*Knapp til lore-tekst "show him"*/
-/*#show_him a {
-    text-decoration: none;
-    color: red;
-    margin: 0;
-    padding: 0;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
-}
-
-#show_him {
-    background-color: #ffffff00;
-    border: none;
-    border-radius: 4px;
-    transition: all 0.5s;
-    font-size: 3vw;
-    font-family: 'Pixel UniCode';
-    padding: 0px;
-    
-}
-
-#show_him:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);   
-
-}
-
-
-/*Lille install-knappen midt i*/
-/*.lastnedknapp2 {
-    flex:1;
-    background-color: #ffffff00;
-    border: none;
-    border-radius: 4px;
-    display: block;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 20%;
-    text-decoration: none;
-    color: white;
-    margin-left: 50%;
-}
-
-.lastnedknapp2:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);
-}
-
-.padding {
-    padding: 10px;
-}
-
-
-
-
-/*
-.småbilder {
-    max-width: 30%;
-    height:auto;
-    margin: 5px;
-}
-
-
-
-.infobokser{
-    flex-flow: wrap;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    color: white;
-    padding-top: 8vw;
-    font-family: "pixel unicode";
-}
-
-.boks {
-    order: 1;
-    flex: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.right {
-    float:right;
-    font-family: 'Pixel UniCode';
-    font-size: 3vw;
-    margin-right:2vw;
-    flex: 1;
-}
-.left {
-    float:left;
-    font-family: 'Pixel UniCode';
-    font-size: 3vw;
-    margin-left:2vw;
-    flex: 1;
-}
-
-@font-face {
-    font-family: 'Pixel UniCode';
-    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
-        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 
 .vidonclick {
@@ -369,35 +269,6 @@ video {
 }
     
 
-.linfobokser {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding-top: 8vw;
-    font-family: "pixel unicode";
-    align-items: center;
-}
-
-
-
-.loverskrift {
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 8%;
-}
-
-.lunderskrift {
-    font-size: 2.3vw;
-    text-align: center;
-    display: flex;
-    order: 4;
-}
-
-.scoreboard {
-    background-color: black;
-}
 
 .middle {
   text-align: center;
@@ -428,7 +299,8 @@ video {
     }
   }
 
-*/
+
+
 /*Custom scrollbar*/
 
 ::-webkit-scrollbar {
@@ -466,21 +338,32 @@ video {
 
 /*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
 @media only screen and (max-width: 600px) {
-    .bilderhovedside, #imgknapp { display:none;}
+    .storG, #imgknapp { display:none;}
     /*.småbilder {max-width: 20%;}*/
-    #header {top:0;}
+    #headeren {top:0; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-areas:" Overkskrift Overskrift Overskrift Overskrift";}
     #overskrift {
         max-width: 100%;
         padding:8px 4px;
-        margin-top:1vw;
-        margin-left:50%;}
-    #overskrift.stor {max-width:80%;}
-    .infobokser {margin-top: 1em;}
-    .left, .right, #show_him {font-size: 4vw;}
+        margin:0;
+        float:none;}
+    #overskrift.stor {max-width:80%;
+        max-height: 30%;
+    }
+    
     #show_him {padding:0; }
     #show_him:hover {padding: 0;}
-    .lunderskrift {font-size: 6vw;}
-    .loverskrift {max-width:20%}
+    
     #video {width: 50%; }
     
 }
+
+@font-face {
+    font-family: 'Pixel UniCode';
+    src: url('bilder/fonter/Pixel-UniCode.woff2') format('woff2'),
+        url('bilder/fonter/Pixel-UniCode.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*<!--på mobil: grid-template-areas:". Overskrift ."". Overskrift .";-->*/
