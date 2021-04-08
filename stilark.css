@@ -1,7 +1,8 @@
 body {
-    width:100vw;
+    width:100%;
     margin: 0px;
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+    
 }
 
 /*Grids ---------------------------------------------------------------->*/
@@ -24,6 +25,9 @@ body {
       "Stats Stats Stats"
       "Support Support Support"
       "Support Support Support";
+      font-size:3vw;
+        color:white;
+        font-family:'pixel unicode';
   }
 
 #headeren {
@@ -48,30 +52,107 @@ body {
 
 /*<!--på mobil: grid-template-areas:". Overskrift ."". Overskrift .";-->*/
 
-.InstallKnapp { grid-area: InstallKnapp; }
 
 .Overskrift { grid-area: Overskrift; }
 
+/*Anders overskrift*/
+#overskriftbilde {
+    width:63%;
+    margin:1vw;
+    height: auto;
+    transition: all 0.5s;
+    padding: 12px 8px;
+    border-radius: 10px;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+}
+
+#overskriftbilde:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+#overskriftbilde.stor {
+    width: 43%;
+    margin:10px;
+}
+
+/*Store install-knappen til høyre*/
+.InstallKnapp { grid-area: InstallKnapp; }
+
+#imgknapp {
+    width: 60%;
+    margin: 1vw;
+    float:right;
+    height: auto;
+    transition: all 0.5s;
+    padding: 8px 8px;
+    border-radius: 10px;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+}
+
+#imgknapp:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+}
+
+#imgknapp.stor {
+    width:40%;
+    margin:10px;
+}
+
+
+
 .Lore {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "LoreTekst LoreTekst LoreBilde"
-      "LoreTekst LoreTekst LoreBilde";
+      "LoreTekst LoreBilde LoreBilde"
+      "LoreTekst LoreBilde LoreBilde";
     grid-area: Lore;
     
 }
   
 .LoreTekst {
     grid-area: LoreTekst;
-    font-size:4vw;
-    color:white;
-    margin-left: 10px;
-    font-family:'pixel unicode';}
+}
+.paddingTekst {
+    padding:15px;
+    margin:10px;
+}
+
+#show_him a {
+    text-decoration: none;
+    color: red;
+    margin: 0;
+    padding: 0;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+}
+
+#show_him {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.5s;
+    font-size: 3vw;
+    font-family: 'Pixel UniCode';
+    padding: 0px;
+}
+
+#show_him:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);  }
   
 .LoreBilde { grid-area: LoreBilde; }
+
+/*Bildet med big G*/
+.bilderhovedside {
+    width: 95%;
+    height: auto; 
+    margin: 5px;
+}
+
   
 .Last-ned {
     display: grid;
@@ -103,7 +184,9 @@ body {
   
 .AboutUsTekst { grid-area: AboutUsTekst; }
   
-.AboutUsBilde { grid-area: AboutUsBilde; }
+.AboutUsBilde {
+    grid-area: AboutUsBilde;
+}
   
 .Stats {
     display: grid;
@@ -140,55 +223,7 @@ figure {
     margin:0;
 }
 
-/*Anders overskrift*/
-#overskriftbilde {
-    width:70%;
-    height: auto;
-    transition: all 0.5s;
-    padding: 8px 8px;
-    border-radius: 10px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
-    
-    
-}
 
-#overskriftbilde:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);
-}
-
-#overskriftbilde.stor {
-    width: 55%;
-    margin-bottom:0;
-    
-}
-
-/*Store install-knappen til høyre*/
-
-#imgknapp {
-    width: 70%;
-    height: auto;
-    transition: all 0.5s;
-    padding: 8px 8px;
-    border-radius: 10px;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
-}
-
-#imgknapp:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    background-color: rgba(255, 255, 255, 0.116);
-}
-
-#imgknapp.stor {
-    width:50%;
-}
-
-/*Bildet med big G*/
-.bilderhovedside {
-    width: 100%;
-    height: auto; 
-    margin: 5px;
-}
 
 
 
