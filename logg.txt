@@ -18,3 +18,5 @@ mer header shit, men tror vi har funnet en grei header no. Har også oppdatert l
 
 25.03.21
 Ryddet i css for å gjøre det lettere å lese. Startet en ny branch der vi tester ut css grids og ser hvordan det ser ut.
+
+08.04.21
