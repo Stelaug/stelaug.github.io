@@ -2,21 +2,27 @@
 Lagde sketch og kom opp med ideer for utseende til nettsiden. Lagde github repository, satte opp prosjekt og oppgaver.
 
 08.03.21
-Begynte på oppsettet til nettsiden, . La inn bilder, lore, 
+Begynte på oppsettet til nettsiden. La inn bilder, lore, 
 
 11.03.21
-mer header shit.
+Mer header stuff.
 
 15.03.21
 Har jobbet på ulike ikoner til språkinstillinger og jobbet videre på lore siden. La inn lore video.
 
 18.03.21
-enda mer header shit og en ny install knapp.
+Enda mer header stuff og en ny install knapp.
 
 22.03.21
-mer header shit, men tror vi har funnet en grei header no. Har også oppdatert lore siden sånn at den ser bedre ut.
+
+Mer header stuff, men tror vi har funnet en grei header no. Har også oppdatert lore siden sånn at den ser bedre ut.
 
 25.03.21
 Ryddet i css for å gjøre det lettere å lese. Startet en ny branch der vi tester ut css grids og ser hvordan det ser ut.
 
 08.04.21
+Fikset alle våre problemer ved å bruke grids istedenfor flexbox, tenker det vil gjøre ting enklere i fremtiden.
+Bruker samme krympe/fargeendringsheader fra tidligere, en venn har tilbudt å lage et banner men vi trenger
+dimensjoner og greier, får se. Fortsatte på databasen, å sette den opp, men er litt usikker på hvordan.
+
+09.04.21 
