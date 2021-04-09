@@ -48,7 +48,6 @@ body {
 #headeren.stor {
     background-color:rgba(255, 255, 255, 0.548);
     background-attachment:fixed;
-
 }
 
 /*<!--på mobil: grid-template-areas:". Overskrift ."". Overskrift .";-->*/
@@ -340,19 +339,25 @@ video {
 @media only screen and (max-width: 600px) {
     .storG, #imgknapp { display:none;}
     /*.småbilder {max-width: 20%;}*/
-    #headeren {top:0; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-areas:" Overkskrift Overskrift Overskrift Overskrift";}
-    #overskrift {
-        max-width: 100%;
+    #headeren {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:" . Overskrift Overskrift Overskrift";
+        grid-template-rows: 1fr 0fr;
+    }
+
+    #overskriftbilde {
+        width: 100%;
         padding:8px 4px;
         margin:0;
         float:none;}
-    #overskrift.stor {max-width:80%;
-        max-height: 30%;
+        #overskriftbilde.stor
+        {width:80%;
+        height: auto;
+        padding:10px 0px;
     }
     
     #show_him {padding:0; }
     #show_him:hover {padding: 0;}
-    
     #video {width: 50%; }
     
 }
