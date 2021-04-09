@@ -1,7 +1,7 @@
 body {
     width:100%;
     margin: 0px;
-    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+    background-color: black;   
 }
 
 
@@ -12,7 +12,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 6px 0px;
-    grid-template-areas:
       "Header Header Header"
       "Lore Lore Lore"
       "Lore Lore Lore"

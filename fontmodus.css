@@ -1,7 +1,7 @@
 body {
     width:100%;
     margin: 0px;
-    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+    background-color: black;
 }
 
 
@@ -27,7 +27,7 @@ body {
       "Support Support Support";
       font-size:3vw;
         color:white;
-        font-family:'pixel unicode';
+        font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
 /*Alt innhold i headeren -------------------------------------------------- */
@@ -156,7 +156,7 @@ body {
     border-radius: 4px;
     transition: all 0.5s;
     font-size: 3vw;
-    font-family: 'Pixel UniCode';
+    font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 0px;
 }
 
@@ -279,7 +279,7 @@ video {
 
 .glow {
     font-size: 80px;
-    font-family: 'Pixel UniCode' ;
+    font-family: 'Pixel UniCode';
     height: 100vh;
     animation: glow 0.75s ease-in-out infinite alternate;
 }

@@ -1,9 +1,3 @@
-/*const dataSplitting = document.querySelector("data-splitting")
-Splitting();
-ScrollOut({
-   targets: '[data-splitting]'
-});*/
-
 
 window.onscroll = function() {scrollFunction()};
 
@@ -22,18 +16,40 @@ window.onscroll = function() {scrollFunction()};
 
 
 
-   /*var myVideo=document.getElementById("video");
-   document.addEventListener("keyup", function(event) {
-      
-      if (event.key === ' ') {
-         event.preventDefault();
-         myVideo.pause(); 
-         
-      }
-      else if (myVideo.paused) {
-      myVideo.play();
-      }
-      else {myVideo.play();
-      }
-    });*/
+   // en font knapp og en font+farge knapp
+   const btn = document.querySelector(".fargeknapp");
+
+   const theme = document.querySelector("#tema-link");
    
+  
+   btn.addEventListener("click", function() {
+     if (theme.getAttribute("href") == "stilark.css") {
+       theme.href = "fargemodus.css";
+     } 
+     else if (theme.getAttribute("href") == "fontmodus.css") {
+      theme.href = "fargemodus.css";
+     }
+     else {
+       theme.href = "stilark.css";
+     }
+   });
+
+
+
+
+   const btnen = document.querySelector(".fontknapp");
+
+   const theme = document.querySelector("#tema-link");
+   
+  
+   btnen.addEventListener("click", function() {
+     if (theme.getAttribute("href") == "stilark.css") {
+       theme.href = "fontmodus.css";
+     } 
+     else if (theme.getAttribute("href") == "fargemodus.css") {
+      theme.href = "fontmodus.css";
+     }
+     else {
+       theme.href = "stilark.css";
+     }
+   });
