@@ -14,7 +14,11 @@ Har jobbet på ulike ikoner til språkinstillinger og jobbet videre på lore sid
 Enda mer header stuff og en ny install knapp.
 
 22.03.21
+
 Mer header stuff, men tror vi har funnet en grei header no. Har også oppdatert lore siden sånn at den ser bedre ut.
+
+25.03.21
+Ryddet i css for å gjøre det lettere å lese. Startet en ny branch der vi tester ut css grids og ser hvordan det ser ut.
 
 08.04.21
 Fikset alle våre problemer ved å bruke grids istedenfor flexbox, tenker det vil gjøre ting enklere i fremtiden.
