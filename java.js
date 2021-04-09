@@ -32,9 +32,7 @@ window.onload=function(){
     }
   });
 
-
    const btnen = document.querySelector(".fontknapp");
-
    btnen.addEventListener("click", function() {
      if (theme.getAttribute("href") == "stilark.css") {
        theme.href = "fontmodus.css";
@@ -46,4 +44,17 @@ window.onload=function(){
        theme.href = "stilark.css";
      }
    });
+
+   const btnto = document.querySelector(".vanligknapp");
+   btnto.addEventListener("click", function() {
+    if (theme.getAttribute("href") == "fontmodus.css") {
+      theme.href = "stilark.css";
+    } 
+    else if (theme.getAttribute("href") == "fargemodus.css") {
+     theme.href = "stilark.css";
+    }
+    else {
+      theme.href = "stilark.css";
+    }
+  });
   }

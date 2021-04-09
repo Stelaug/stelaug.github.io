@@ -381,10 +381,12 @@ video {
     color: white;
     padding: 0px;
     width:200px;
-    min-height:100px;
+    min-height:70px;
     border: none;
     background: url("bilder/Andersettings.png") no-repeat;
-    background-size:cover;
+    background-size:200px 65px;
+    border-radius: 10px;
+    
   }
   
   .settings {
@@ -392,15 +394,20 @@ video {
     bottom:0;
     right:0;
     display: inline-block;
+
   }
   
   .settingsliste {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    right:0;
+    background-color: #f1f1f1d3;
     min-width: 160px;
-    bottom: 50px;
+    bottom: 80px;
     z-index: 1;
+    border-radius: 10px;
+    font-size:2vw;
+
   }
   
   .settingsliste a {
@@ -408,14 +415,21 @@ video {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
   }
   
-  .settingsliste a:hover {background-color: #ccc}
+  .settingsliste a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+    }
   
   .settings:hover .settingsliste{
     display: block;
+    transition: all 0.5s;
   }
   
   .settings:hover .settingsknapp {
-    background-color: #2980B9;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+    transition: all 0.5s;
   }
