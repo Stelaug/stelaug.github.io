@@ -6,7 +6,7 @@ body {
 }
 
 
-/*Grids ---------------------------------------------------------------->*/
+/*Grids*/
 .grid-container {
     width:100%;
     display: grid;
@@ -31,6 +31,7 @@ body {
         font-family:'pixel unicode';
   }
 
+/*Alt innhold i headeren -------------------------------------------------- */
 #headeren {
     width:100%;
     display: grid;
@@ -50,6 +51,24 @@ body {
 #headeren.stor {
     background-color:rgba(255, 255, 255, 0.548);
     background-attachment:fixed;
+}
+
+/*Dette trengs for at anchor tag'en skal holde seg omtrent over bildene (read: utenfor fra nettsiden, knappene fungere helt fint men ingen klikkbare områder utenfor dem, winwin*/
+.figuranchor {
+    padding: 0px;
+    width: 60%;
+}
+
+.figuranchor a{
+    text-decoration: none;
+    color: red;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display:block;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+    background-image: url("bilder/AndersInstallHDSvart.png");
 }
 
 .Overskrift { grid-area: Overskrift; }
@@ -79,26 +98,7 @@ body {
 /*Store install-knappen til høyre*/
 .InstallKnapp { grid-area: InstallKnapp; }
 
-/*Dette trengs for at anchor tag'en skal holde seg omtrent over bildene (read: utenfor fra nettsiden, knappene fungere helt fint men ingen klikkbare områder utenfor dem, winwin*/
-.figuranchor {
-    padding: 0px;
-    width: 60%;
-}
-
 .right {float: right;}
-
-.figuranchor a{
-    text-decoration: none;
-    color: red;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    display:block;
-    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
-    background-image: url("bilder/AndersInstallHDSvart.png");
-}
-
 
 #imgknapp {
     width: 100%;
@@ -121,7 +121,7 @@ body {
     margin:0px 10px;
 }
 
-
+/*Hoveddel ------------------------------------------------ */
 
 .Lore {
     display: grid;
