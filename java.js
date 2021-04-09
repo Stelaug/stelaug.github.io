@@ -1,7 +1,6 @@
 
 window.onscroll = function() {scrollFunction()};
-
-   function scrollFunction() {
+  function scrollFunction() {
     if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
        document.getElementById("headeren").className = "stor";
        document.getElementById("overskriftbilde").className = "stor";
@@ -10,38 +9,32 @@ window.onscroll = function() {scrollFunction()};
       document.getElementById("headeren").className = "";
       document.getElementById("overskriftbilde").className = "";
       document.getElementById("imgknapp").className = "";
-
-      }
-   }
+    }
+  }
 
 
 
    // en font knapp og en font+farge knapp
-   const btn = document.querySelector(".fargeknapp");
 
-   const theme = document.querySelector("#tema-link");
+window.onload=function(){
+  const btn = document.querySelector(".fargeknapp");
+  const theme = document.querySelector("#tema-link");
    
-  
-   btn.addEventListener("click", function() {
-     if (theme.getAttribute("href") == "stilark.css") {
-       theme.href = "fargemodus.css";
-     } 
-     else if (theme.getAttribute("href") == "fontmodus.css") {
+  btn.addEventListener("click", function() {
+    if (theme.getAttribute("href") == "stilark.css") {
       theme.href = "fargemodus.css";
-     }
-     else {
-       theme.href = "stilark.css";
-     }
-   });
-
-
+    } 
+    else if (theme.getAttribute("href") == "fontmodus.css") {
+      theme.href = "fargemodus.css";
+    }
+    else {
+      theme.href = "stilark.css";
+    }
+  });
 
 
    const btnen = document.querySelector(".fontknapp");
 
-   const theme = document.querySelector("#tema-link");
-   
-  
    btnen.addEventListener("click", function() {
      if (theme.getAttribute("href") == "stilark.css") {
        theme.href = "fontmodus.css";
@@ -53,3 +46,4 @@ window.onscroll = function() {scrollFunction()};
        theme.href = "stilark.css";
      }
    });
+  }
