@@ -27,7 +27,7 @@ body {
       "Support Support Support";
       font-size:2vw;
         color:white;
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
 /*Alt innhold i headeren -------------------------------------------------- */
@@ -156,7 +156,7 @@ body {
     border-radius: 4px;
     transition: all 0.5s;
     font-size: 2vw;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0px;
 }
 

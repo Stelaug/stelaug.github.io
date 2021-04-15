@@ -381,10 +381,10 @@ video {
     color: white;
     padding: 0px;
     width:200px;
-    min-height:70px;
+    min-height:60px;
     border: none;
     background: url("bilder/Andersettings.png") no-repeat;
-    background-size:200px 65px;
+    background-size:200px 60px;
     border-radius: 10px;
     
   }
@@ -403,7 +403,7 @@ video {
     right:0;
     background-color: #f1f1f1d3;
     min-width: 160px;
-    bottom: 80px;
+    bottom: 70px;
     z-index: 1;
     border-radius: 10px;
     font-size:2vw;
@@ -433,3 +433,27 @@ video {
     background-color: rgba(255, 255, 255, 0.116);
     transition: all 0.5s;
   }
+
+
+/* Til lore nettsiden ----------------------------------------------------*/
+
+
+.loresidegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      " . loreoverskrift ."
+      "Lore Lore Lore"
+      "Lore Lore Lore"
+}
+
+.loreoverskrift {
+    grid-area: loreoverskrift;
+}
+
+.loreoverbilde {
+    max-width: 40%;
+}
