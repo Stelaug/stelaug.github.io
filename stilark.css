@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
-    gap: 6px 0px;
+    gap: 0px 0px;
     grid-template-areas:
       "Header Header Header"
       "Presenter Presenter Presenter"
