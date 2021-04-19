@@ -7,13 +7,14 @@ body {
 
 /*Grids*/
 .grid-container {
-    width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
     gap: 6px 0px;
     grid-template-areas:
       "Header Header Header"
+      "Presenter Presenter Presenter"
+      "Presenter Presenter Presenter"
       "Lore Lore Lore"
       "Lore Lore Lore"
       "Lore Lore Lore"
@@ -43,8 +44,6 @@ body {
     grid-area: Headeren;
     transition: 0.3s;
     position: fixed;
-    
-
 }
 
 #headeren.stor {
@@ -105,7 +104,7 @@ body {
     float:right;
     height: auto;
     transition: all 0.5s;
-    padding: 8px 8px;
+    padding: 2px 8px;
     border-radius: 10px;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
@@ -121,6 +120,41 @@ body {
 }
 
 /*Hoveddel ------------------------------------------------ */
+
+.Presenter {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+    " . ting . "
+    " . ting . ";
+    grid-area: Presenter;
+}
+
+
+.ting {
+    grid-area: ting;
+}
+
+#myVideo {
+    width: 100%;
+    height:auto;
+    border-radius: 10px;
+}
+
+
+.presTekst {
+    grid-area: ting;
+    width: 100%;
+    height:auto;
+    color:white;
+    opacity:100%;
+    z-index: 999;
+    margin:0;
+    margin-left:10px;
+}
 
 .Lore {
     display: grid;
@@ -142,6 +176,7 @@ body {
     margin:10px;
 }
 
+
 #show_him a {
     text-decoration: none;
     color: red;
@@ -155,7 +190,7 @@ body {
     border: none;
     border-radius: 4px;
     transition: all 0.5s;
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: 'Pixel UniCode';
     padding: 0px;
 }
@@ -258,7 +293,7 @@ figure {
     font-size: 1.5vw;
 }
 
-video {
+#video {
     flex-direction: column;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     border-radius: 10px;
@@ -381,11 +416,12 @@ video {
     color: white;
     padding: 0px;
     width:200px;
-    min-height:70px;
+    min-height:60px;
     border: none;
     background: url("bilder/Andersettings.png") no-repeat;
-    background-size:200px 65px;
+    background-size:200px 60px;
     border-radius: 10px;
+    
   }
   
   .settings {
@@ -393,6 +429,7 @@ video {
     bottom:0;
     right:0;
     display: inline-block;
+
   }
   
   .settingsliste {
@@ -401,10 +438,11 @@ video {
     right:0;
     background-color: #f1f1f1d3;
     min-width: 160px;
-    bottom: 80px;
+    bottom: 70px;
     z-index: 1;
     border-radius: 10px;
     font-size:2vw;
+
   }
   
   .settingsliste a {
@@ -412,14 +450,45 @@ video {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
   }
   
-  .settingsliste a:hover {background-color: #ccc; border-radius: 10px; }
+  .settingsliste a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+    }
   
   .settings:hover .settingsliste{
     display: block;
+    transition: all 0.5s;
   }
   
   .settings:hover .settingsknapp {
-    background-color: #000000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+    transition: all 0.5s;
   }
+
+
+/* Til lore nettsiden ----------------------------------------------------*/
+
+
+.loresidegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 6px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      " . loreoverskrift ."
+      "Lore Lore Lore"
+      "Lore Lore Lore"
+}
+
+.loreoverskrift {
+    grid-area: loreoverskrift;
+}
+
+.loreoverbilde {
+    max-width: 40%;
+}
