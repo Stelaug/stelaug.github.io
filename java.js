@@ -11,10 +11,7 @@ window.onscroll = function() {scrollFunction()};
       document.getElementById("imgknapp").className = "";
     }
   }
-
-
-
-   // en font knapp og en font+farge knapp
+//en font knapp og en font+farge knapp
 
 window.onload=function(){
   const btn = document.querySelector(".fargeknapp");
@@ -57,4 +54,13 @@ window.onload=function(){
       theme.href = "stilark.css";
     }
   });
-  }
+
+  var myLoreVideo=document.getElementById("myLoreVideo");
+  function playPause() { 
+  if (myLoreVideo.paused) 
+    myLoreVideo.play(); 
+  else 
+    myLoreVideo.pause(); 
+  } 
+}
+

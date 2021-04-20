@@ -34,7 +34,7 @@ body {
 /*Alt innhold i headeren -------------------------------------------------- */
 #headeren {
     width:100%;
-    
+    z-index: 999;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -165,8 +165,7 @@ body {
     grid-template-areas:
       "LoreTekst LoreBilde LoreBilde"
       "LoreTekst LoreBilde LoreBilde";
-    grid-area: Lore;
-    
+    grid-area: Lore;   
 }
   
 .LoreTekst {
@@ -477,10 +476,11 @@ figure {
 .loresidegrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 1fr 1fr 1fr 1fr;
     gap: 6px 0px;
     grid-template-areas:
       "Header Header Header"
+      " . . . "
       " . lorevideo . "
       " . loreoverskrift ."
       "Lore Lore Lore"

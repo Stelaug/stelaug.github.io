@@ -27,3 +27,6 @@ dimensjoner og greier, får se. Fortsatte på databasen, å sette den opp, men e
 Begynte å lage et brukersystem med database.
 
 09.04.21 
+
+19.04.21
+Videre arbeid med database, la inn video av spillet på index, men denne må fikses.

@@ -5,11 +5,11 @@ body {
 }
 
 
-/*Grids*/
+/*Grid*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "Header Header Header"
@@ -29,7 +29,7 @@ body {
       font-size:3vw;
         color:white;
         font-family:'pixel unicode';
-  }
+}
 
 /*Alt innhold i headeren -------------------------------------------------- */
 #headeren {
@@ -41,7 +41,7 @@ body {
     grid-template-areas:
     "Overskrift Overskrift InstallKnapp"
     "Overskrift Overskrift InstallKnapp";
-    grid-area: Headeren;
+    grid-area: Header;
     transition: 0.3s;
     position: fixed;
 }
@@ -144,6 +144,12 @@ body {
     border-radius: 10px;
 }
 
+#myLoreVideo {
+    width:81vh;
+    height:auto;
+    border-radius: 10px;
+}
+
 
 .presTekst {
     grid-area: ting;
@@ -171,8 +177,8 @@ body {
     grid-area: LoreTekst;
 }
 .paddingTekst {
-    padding:15px;
-    margin:10px;
+    padding:0px 15px;
+    margin:0px 10px;
 }
 
 
@@ -193,7 +199,7 @@ body {
     border: none;
     border-radius: 4px;
     transition: all 0.5s;
-    font-size: 3vw;
+    font-size: 3.4vw;
     font-family: 'Pixel UniCode';
     padding: 0px;
 }
@@ -239,10 +245,9 @@ body {
 .Last-ned {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "Bilde1 A1 A2"
       "Bilde1 A1 A2";
     grid-area: Last-ned;
 }
@@ -495,34 +500,79 @@ figure {
   }
 
 
-/* Til lore nettsiden ----------------------------------------------------*/
-
-
-.Loresidegrid {
+.clips-grid-container {
     display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.1fr 0.9fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "Header Header Header"
-      "Lorevideo Lorevideo Lorevideo"
-      " . Loreoverskrift . "
-      "Lorehvddel Lorehvddel Lorehvddel"
+      "InstallTekst InstallTekst InstallTekst"
+      "Clips Clips Clips";
+      font-size:3vw;
+        color:white;
+        font-family:'pixel unicode';
 }
 
-.Loreoverskrift {
-    grid-area: loreoverskrift;
+.InstallTekst {
+    width:100%;
+    display: grid;
+    grid-template-columns: 0.1fr 7fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+    " . InstTekst . "
+    " . InstTekst . ";
+    grid-area: InstallTekst;
 }
 
-.Loreoverbilde {
-    max-width: 40%;
+.InstTekst {
+    grid-area:InstTekst;
+    font-size:3.4vw;
 }
 
-.Lorehvddel {
-    grid-area: Lorehvddel;
+.Clips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Clip1 Clip2 Clip3"
+      "Clip4 Clip5 Clip6"
+      "Clip7 Clip8 Clip9";
+grid-area: Clips;
 }
 
-.Lorevideo {
-    grid-area: Lorevideo;
+.Clip {
+    grid-area:Clip;
+}
+
+.ClipOver {grid-area:ClipOver;}
+
+/* Til lore nettsiden ----------------------------------------------------*/
+
+.lore-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.8fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      " . Presenter . "
+      "Lore Lore Lore"
+      "Lore Lore Lore"
+      "Lore Lore Lore";
+      font-size:3vw;
+        color:white;
+        font-family:'pixel unicode';
+}
+
+.LoreHvdDel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "LoreTekst LoreTekst LoreBilde";
+    grid-area: Lore;
 }
