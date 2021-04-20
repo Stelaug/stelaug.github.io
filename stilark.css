@@ -151,7 +151,6 @@ body {
     height:auto;
     color:white;
     opacity:100%;
-    z-index: 999;
     margin:0;
     margin-left:10px;
 }
@@ -187,6 +186,7 @@ body {
     padding: 0;
     cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
 }
+
 
 #knapper {
     background-color: #ffffff00;
@@ -498,22 +498,31 @@ figure {
 /* Til lore nettsiden ----------------------------------------------------*/
 
 
-.loresidegrid {
+.Loresidegrid {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 6px 0px;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
     grid-template-areas:
       "Header Header Header"
-      " . loreoverskrift ."
-      "Lore Lore Lore"
-      "Lore Lore Lore"
+      "Lorevideo Lorevideo Lorevideo"
+      " . Loreoverskrift . "
+      "Lorehvddel Lorehvddel Lorehvddel"
 }
 
-.loreoverskrift {
+.Loreoverskrift {
     grid-area: loreoverskrift;
 }
 
-.loreoverbilde {
+.Loreoverbilde {
     max-width: 40%;
+}
+
+.Lorehvddel {
+    grid-area: Lorehvddel;
+}
+
+.Lorevideo {
+    grid-area: Lorevideo;
 }
