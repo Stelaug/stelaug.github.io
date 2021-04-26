@@ -401,32 +401,7 @@ figure {
     background-image: url("bilder/FlipBlåAndersHD.png");
 }
 
-/*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
-@media only screen and (max-width: 600px) {
-    .storG, #imgknapp { display:none;}
-    /*.småbilder {max-width: 20%;}*/
-    #headeren {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:" . Overskrift Overskrift Overskrift";
-        grid-template-rows: 1fr 0fr;
-    }
 
-    #overskriftbilde {
-        width: 100%;
-        padding:8px 4px;
-        margin:0;
-        float:none;}
-        #overskriftbilde.stor
-        {width:80%;
-        height: auto;
-        padding:10px 0px;
-    }
-    
-    #show_him {padding:0; }
-    #show_him:hover {padding: 0;}
-    #video {width: 50%; }
-    
-}
 
 @font-face {
     font-family: 'Pixel UniCode';
@@ -575,4 +550,48 @@ grid-area: Clips;
     grid-template-areas:
       "LoreTekst LoreTekst LoreBilde";
     grid-area: Lore;
+}
+
+
+
+/*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
+@media only screen and (max-width: 600px) {
+    .storG, #imgknapp { display:none;}
+    /*.småbilder {max-width: 20%;}*/
+    #headeren {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:" . Overskrift Overskrift Overskrift";
+        grid-template-rows: 1fr 0fr;
+    }
+
+    /*#overskriftbilde {
+        width: 100%;
+        padding:8px 4px;
+        margin:0;
+        float:none;}
+        #overskriftbilde.stor
+        {width:80%;
+        height: auto;
+        padding:10px 0px;
+    }
+    
+    #show_him {padding:0; }
+    #show_him:hover {padding: 0;}
+    #video {width: 50%; }*/
+    #myLoreVideo {display:none;}
+    #myVideo {display:none;}
+    .lore-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.8fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "Header Header Header"
+          " . Presenter . "
+          "Lore Lore Lore"
+          "Lore Lore Lore"
+          "Lore Lore Lore";
+          font-size:3vw;
+            color:white;
+            font-family:'pixel unicode';
+    }
 }
