@@ -7,25 +7,26 @@ body {
 
 /*Grid*/
 .grid-container {
+    width:100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
     grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "Header Header Header"
-      "Presenter Presenter Presenter"
-      "Presenter Presenter Presenter"
-      "Lore Lore Lore"
-      "Lore Lore Lore"
-      "Lore Lore Lore"
-      "Last-ned Last-ned Last-ned"
-      "Last-ned Last-ned Last-ned"
-      "Among-us Among-us Among-us"
-      "Among-us Among-us Among-us"
-      "Stats Stats Stats"
-      "Stats Stats Stats"
-      "Support Support Support"
-      "Support Support Support";
+      " . Header Header Header . "
+      " . Presenter Presenter Presenter . "
+      " . Presenter Presenter Presenter . "
+      " . Lore Lore Lore . "
+      " . Lore Lore Lore . "
+      " . Lore Lore Lore . "
+      " . Last-ned Last-ned Last-ned . "
+      " . Last-ned Last-ned Last-ned . "
+      " . Among-us Among-us Among-us . "
+      " . Among-us Among-us Among-us . "
+      " . Stats Stats Stats . "
+      " . Stats Stats Stats . "
+      " . Support Support Support . "
+      " . Support Support Support . ";
       font-size:3vw;
         color:white;
         font-family:'pixel unicode';
@@ -75,6 +76,7 @@ body {
 #overskriftbilde {
     width:100%;
     margin:1vw;
+    margin-left:50px;
     height: auto;
     transition: all 0.5s;
     padding: 12px 8px;
@@ -101,6 +103,7 @@ body {
 #imgknapp {
     width: 100%;
     margin: 1vw;
+    margin-right:50px;
     float:right;
     height: auto;
     transition: all 0.5s;
