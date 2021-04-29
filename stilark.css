@@ -2,6 +2,7 @@ body {
     width:100%;
     margin: 0px;
     background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+    background-color: #390026;
 }
 
 
@@ -375,6 +376,7 @@ figure {
 
 ::-webkit-scrollbar {
     width: 15px;
+    background-color:white;
 }
 
 /*bakgrunn, vær samme farge, de er layered oppå hverandre, vet egt ikke forksjell?*/
