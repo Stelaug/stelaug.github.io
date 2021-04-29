@@ -5,31 +5,32 @@ body {
 }
 
 
-/*Grids*/
+/*Grid*/
 .grid-container {
+    width:100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
-    gap: 6px 0px;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    gap: 0px 0px;
     grid-template-areas:
-      "Header Header Header"
-      "Presenter Presenter Presenter"
-      "Presenter Presenter Presenter"
-      "Lore Lore Lore"
-      "Lore Lore Lore"
-      "Lore Lore Lore"
-      "Last-ned Last-ned Last-ned"
-      "Last-ned Last-ned Last-ned"
-      "Among-us Among-us Among-us"
-      "Among-us Among-us Among-us"
-      "Stats Stats Stats"
-      "Stats Stats Stats"
-      "Support Support Support"
-      "Support Support Support";
+      " . Header Header Header . "
+      " . Presenter Presenter Presenter . "
+      " . Presenter Presenter Presenter . "
+      " . Lore Lore Lore . "
+      " . Lore Lore Lore . "
+      " . Lore Lore Lore . "
+      " . Last-ned Last-ned Last-ned . "
+      " . Last-ned Last-ned Last-ned . "
+      " . Among-us Among-us Among-us . "
+      " . Among-us Among-us Among-us . "
+      " . Stats Stats Stats . "
+      " . Stats Stats Stats . "
+      " . Support Support Support . "
+      " . Support Support Support . ";
       font-size:2vw;
-        color:white;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 /*Alt innhold i headeren -------------------------------------------------- */
 #headeren {
@@ -41,7 +42,7 @@ body {
     grid-template-areas:
     "Overskrift Overskrift InstallKnapp"
     "Overskrift Overskrift InstallKnapp";
-    grid-area: Headeren;
+    grid-area: Header;
     transition: 0.3s;
     position: fixed;
 }
@@ -75,6 +76,7 @@ body {
 #overskriftbilde {
     width:100%;
     margin:1vw;
+    margin-left:50px;
     height: auto;
     transition: all 0.5s;
     padding: 12px 8px;
@@ -101,6 +103,7 @@ body {
 #imgknapp {
     width: 100%;
     margin: 1vw;
+    margin-right:50px;
     float:right;
     height: auto;
     transition: all 0.5s;
@@ -144,6 +147,12 @@ body {
     border-radius: 10px;
 }
 
+#myLoreVideo {
+    width:81vh;
+    height:auto;
+    border-radius: 10px;
+}
+
 
 .presTekst {
     grid-area: ting;
@@ -151,7 +160,6 @@ body {
     height:auto;
     color:white;
     opacity:100%;
-    z-index: 999;
     margin:0;
     margin-left:10px;
 }
@@ -172,10 +180,37 @@ body {
     grid-area: LoreTekst;
 }
 .paddingTekst {
-    padding:15px;
-    margin:10px;
+    padding:0px 15px;
+    margin:0px 10px;
 }
 
+
+/*knapper for å bytte sider*/
+/*denne er generelt for alle, noen er spesialiserte*/
+
+#knapper a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    cursor: url("bilder/Pixel_crosshair.gif"), url("bilder/Pixel_crosshair.cur"), default;
+}
+
+
+#knapper {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.5s;
+    font-size: 1.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+}
+
+#knapper:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: rgba(255, 255, 255, 0.116);
+}
 
 #show_him a {
     text-decoration: none;
@@ -197,7 +232,6 @@ body {
 
 #show_him:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
     background-color: rgba(255, 255, 255, 0.116);  }
   
 .LoreBilde { grid-area: LoreBilde; }
@@ -214,10 +248,9 @@ body {
 .Last-ned {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "Bilde1 A1 A2"
       "Bilde1 A1 A2";
     grid-area: Last-ned;
 }
@@ -371,32 +404,7 @@ figure {
     background-image: url("bilder/FlipBlåAndersHD.png");
 }
 
-/*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
-@media only screen and (max-width: 600px) {
-    .storG, #imgknapp { display:none;}
-    /*.småbilder {max-width: 20%;}*/
-    #headeren {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:" . Overskrift Overskrift Overskrift";
-        grid-template-rows: 1fr 0fr;
-    }
 
-    #overskriftbilde {
-        width: 100%;
-        padding:8px 4px;
-        margin:0;
-        float:none;}
-        #overskriftbilde.stor
-        {width:80%;
-        height: auto;
-        padding:10px 0px;
-    }
-    
-    #show_him {padding:0; }
-    #show_him:hover {padding: 0;}
-    #video {width: 50%; }
-    
-}
 
 @font-face {
     font-family: 'Pixel UniCode';
@@ -429,7 +437,7 @@ figure {
     bottom:0;
     right:0;
     display: inline-block;
-
+    font-size: 1vw;
   }
   
   .settingsliste {
@@ -441,7 +449,7 @@ figure {
     bottom: 70px;
     z-index: 1;
     border-radius: 10px;
-    font-size:2vw;
+    font-size:1.5vw;
 
   }
   
@@ -470,25 +478,123 @@ figure {
   }
 
 
-/* Til lore nettsiden ----------------------------------------------------*/
-
-
-.loresidegrid {
+.clips-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 6px 0px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.1fr 0.9fr 1fr;
+    gap: 0px 0px;
     grid-template-areas:
       "Header Header Header"
-      " . loreoverskrift ."
-      "Lore Lore Lore"
-      "Lore Lore Lore"
+      "InstallTekst InstallTekst InstallTekst"
+      "Clips Clips Clips";
+      font-size:3vw;
+        color:white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.loreoverskrift {
-    grid-area: loreoverskrift;
+.InstallTekst {
+    width:100%;
+    display: grid;
+    grid-template-columns: 0.1fr 7fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+    " . InstTekst . "
+    " . InstTekst . ";
+    grid-area: InstallTekst;
 }
 
-.loreoverbilde {
-    max-width: 40%;
+.InstTekst {
+    grid-area:InstTekst;
+    font-size:2vw;
+}
+
+.Clips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Clip1 Clip2 Clip3"
+      "Clip4 Clip5 Clip6"
+      "Clip7 Clip8 Clip9";
+grid-area: Clips;
+}
+
+.Clip {
+    grid-area:Clip;
+}
+
+.ClipOver {grid-area:ClipOver;}
+
+/* Til lore nettsiden ----------------------------------------------------*/
+
+.lore-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.8fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header Header Header"
+      " . Presenter . "
+      "Lore Lore Lore"
+      "Lore Lore Lore"
+      "Lore Lore Lore";
+      font-size:2vw;
+        color:white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.LoreHvdDel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "LoreTekst LoreTekst LoreBilde";
+    grid-area: Lore;
+}
+
+
+
+/*mobil, knapper må krympe, Gud må vekk. Denne bør være nederst, ellers kjører den før det andre.*/
+@media only screen and (max-width: 600px) {
+    .storG, #imgknapp { display:none;}
+    /*.småbilder {max-width: 20%;}*/
+    #headeren {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:" . Overskrift Overskrift Overskrift";
+        grid-template-rows: 1fr 0fr;
+    }
+
+    /*#overskriftbilde {
+        width: 100%;
+        padding:8px 4px;
+        margin:0;
+        float:none;}
+        #overskriftbilde.stor
+        {width:80%;
+        height: auto;
+        padding:10px 0px;
+    }
+    
+    #show_him {padding:0; }
+    #show_him:hover {padding: 0;}
+    #video {width: 50%; }*/
+    #myLoreVideo {display:none;}
+    #myVideo {display:none;}
+    .lore-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.8fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "Header Header Header"
+          " . Presenter . "
+          "Lore Lore Lore"
+          "Lore Lore Lore"
+          "Lore Lore Lore";
+          font-size:2vw;
+            color:white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
