@@ -26,7 +26,15 @@ Bruker samme krympe/fargeendringsheader fra tidligere, en venn har tilbudt å la
 dimensjoner og greier, får se. Fortsatte på databasen, å sette den opp, men er litt usikker på hvordan.
 Begynte å lage et brukersystem med database.
 
-09.04.21 
+09.04.21
+
 
 19.04.21
 Videre arbeid med database, la inn video av spillet på index, men denne må fikses.
+
+28.04.21
+Tenkte på databaser. Endret marginen på siden, ser mindre cramped ut nå. 
+
+29.04.21
+Tenkte mer på databaser. Fikset småproblemer med treig innlasting av side, endring av farger.
+
