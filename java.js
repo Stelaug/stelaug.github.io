@@ -62,5 +62,20 @@ window.onload=function(){
   else 
     myLoreVideo.pause(); 
   } 
+
+  //Skal beholde user preferences ???
+  const btntre = document.querySelector("show_him");
+   
+  btntre.addEventListener("click", function() {
+    if (theme.getAttribute("href") == "stilark.css") {
+      theme.href = "stilark.css";
+    } 
+    else if (theme.getAttribute("href") == "fontmodus.css") {
+      theme.href = "fontmodus.css";
+    }
+    else {
+      theme.href = "stilark.css";
+    }
+  });
 }
 
