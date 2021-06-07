@@ -38,3 +38,5 @@ Tenkte på databaser. Endret marginen på siden, ser mindre cramped ut nå.
 29.04.21
 Tenkte mer på databaser. Fikset småproblemer med treig innlasting av side, endring av farger.
 
+06.05.21
+Jobbet videre med databasen. går helt ok. Prøver med highscore_id i stedet for 3 primary keys.
