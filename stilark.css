@@ -190,7 +190,7 @@ body {
 /*knapper for å bytte sider*/
 /*denne er generelt for alle, noen er spesialiserte*/
 
-#knapper a{
+.knapper a{
     text-decoration: none;
     color: white;
     margin: 0;
@@ -199,7 +199,7 @@ body {
 }
 
 
-#knapper {
+.knapper {
     background-color: #ffffff00;
     border: none;
     border-radius: 4px;
@@ -209,7 +209,7 @@ body {
     padding: 0px;
 }
 
-#knapper:hover {
+.knapper:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     background-color: rgba(255, 255, 255, 0.116);
 }
