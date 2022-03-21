@@ -13,48 +13,26 @@ window.onscroll = function() {scrollFunction()};
   }
 //en font knapp og en font+farge knapp
 
-window.onload=function(){
-  const btn = document.querySelector(".fargeknapp");
-  const theme = document.querySelector("#tema-link");
-   
-  btn.addEventListener("click", function() {
-    if (theme.getAttribute("href") == "stilark.css") {
-      theme.href = "fargemodus.css";
-    } 
-    else if (theme.getAttribute("href") == "fontmodus.css") {
-      theme.href = "fargemodus.css";
-    }
-    else {
-      theme.href = "stilark.css";
-    }
-  });
+let farger = [
+  {navn:"vanlig",     bgimage:"background-image: linear-gradient(to bottom right, #090737, #390026, #640000);", bgcolor:"#390026;", tekstfarge:"white", tekstfont:"Pixel UniCode"},
+  {navn:"betterfont", bgimage:"background-image: linear-gradient(to bottom right, #090737, #390026, #640000);", bgcolor:"#390026;", tekstfarge:"white", tekstfont:"Arial, Helvetica, sans-serif"},
+  {navn:"dark",       bgimage:"none", bgcolor:"black", tekstfarge:"white", tekstfont:"Pixel UniCode"},
+  {navn:"light",      bgimage:"none", bgcolor:"white", tekstfarge:"black", tekstfont:"Pixel UniCode"}
+  
+  //{navn:"",           bgimage:"", bakgrunn:"", tekstfarge:"", tekstfont:""}
+]
 
-   const btnen = document.querySelector(".fontknapp");
-   btnen.addEventListener("click", function() {
-     if (theme.getAttribute("href") == "stilark.css") {
-       theme.href = "fontmodus.css";
-     } 
-     else if (theme.getAttribute("href") == "fargemodus.css") {
-      theme.href = "fontmodus.css";
-     }
-     else {
-       theme.href = "stilark.css";
-     }
-   });
+function riktigeFarger() {
+  var i = temaVelger.selectedIndex;
+  document.body.style.color = farger[i].tekstfarge;
+  document.body.style.fontFamily = farger[i].tekstfont;
+  document.getElementsByClassName("knapper").style.fontFamily = farger[i].tekstfont;
+  document.body.style.backgroundImage = farger[i].bgimage;
+  document.body.style.backgroundColor = farger[i].bgcolor;
+  
+}
 
-   const btnto = document.querySelector(".vanligknapp");
-   btnto.addEventListener("click", function() {
-    if (theme.getAttribute("href") == "fontmodus.css") {
-      theme.href = "stilark.css";
-    } 
-    else if (theme.getAttribute("href") == "fargemodus.css") {
-     theme.href = "stilark.css";
-    }
-    else {
-      theme.href = "stilark.css";
-    }
-  });
-
+window.onload = function() {
   var myLoreVideo=document.getElementById("myLoreVideo");
   function playPause() { 
   if (myLoreVideo.paused) 
@@ -62,20 +40,7 @@ window.onload=function(){
   else 
     myLoreVideo.pause(); 
   } 
-
-  //Skal beholde user preferences ???
-  const btntre = document.querySelector("show_him");
-   
-  btntre.addEventListener("click", function() {
-    if (theme.getAttribute("href") == "stilark.css") {
-      theme.href = "stilark.css";
-    } 
-    else if (theme.getAttribute("href") == "fontmodus.css") {
-      theme.href = "fontmodus.css";
-    }
-    else {
-      theme.href = "stilark.css";
-    }
-  });
 }
+  
+
 

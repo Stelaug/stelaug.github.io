@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stilark.css" id="tema-link">
+    <link rel="stylesheet" href="stilark.css">
     <script type="text/javascript" src="java.js"></script>
     <link rel="icon" href="bilder/andershd.png">
     <title>Anders Tale</title>
 </head>
-<body>
-        <div class="grid-container">
+<body onload="riktigeFarger()">
+        <div id="grid-container">
             <div class="settings">
-              <button class="settingsknapp"></button>
-              <div class="settingsliste">
-              <a href="#" class="fargeknapp">High-contrast mode</a>
-              <a href="#" class="fontknapp">Readable font</a>
-              <a href="#" class="vanligknapp">Normal</a>
-              </div>
+              <select id="temaVelger" onchange="riktigeFarger()">
+                <option>Vanlig</option>
+                <option>Betre font</option>
+                <option>Dark</option>
+                <option>Light</option>
+              </select>
             </div>
+          
 
             <div id="headeren">
                 <div class="Overskrift">
