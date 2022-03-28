@@ -13,22 +13,26 @@ window.onscroll = function() {scrollFunction()};
   }
 //en font knapp og en font+farge knapp
 
-let farger = [
-  {navn:"vanlig",     bgimage:"background-image: linear-gradient(to bottom right, #090737, #390026, #640000);", bgcolor:"#390026;", tekstfarge:"white", tekstfont:"Pixel UniCode"},
-  {navn:"betterfont", bgimage:"background-image: linear-gradient(to bottom right, #090737, #390026, #640000);", bgcolor:"#390026;", tekstfarge:"white", tekstfont:"Arial, Helvetica, sans-serif"},
-  {navn:"dark",       bgimage:"none", bgcolor:"black", tekstfarge:"white", tekstfont:"Pixel UniCode"},
-  {navn:"light",      bgimage:"none", bgcolor:"white", tekstfarge:"black", tekstfont:"Pixel UniCode"}
+var farger = [
+  {navn:"vanlig",     bgimage:"background-image: linear-gradient(to bottom right, #090737, #390026, #640000);", bgcolor:"#390026;", tekstfarge:"white", tekstfont:"Pixel UniCode", tekststr:"3vw"},
+  {navn:"betterfont", bgimage:"background-image: linear-gradient(to bottom right, #090737, #390026, #640000);", bgcolor:"#390026;", tekstfarge:"white", tekstfont:"Arial, Helvetica, sans-serif", tekststr:"2vw"},
+  {navn:"dark",       bgimage:"none", bgcolor:"black", tekstfarge:"white", tekstfont:"Pixel UniCode", tekststr:"3vw"},
+  {navn:"light",      bgimage:"none", bgcolor:"grey", tekstfarge:"black", tekstfont:"Pixel UniCode", tekststr:"3vw"}
   
   //{navn:"",           bgimage:"", bakgrunn:"", tekstfarge:"", tekstfont:""}
 ]
 
+
 function riktigeFarger() {
-  var i = temaVelger.selectedIndex;
+  var i = temaVelger.selectedIndex - 1;
   document.body.style.color = farger[i].tekstfarge;
   document.body.style.fontFamily = farger[i].tekstfont;
-  document.getElementsByClassName("knapper").style.fontFamily = farger[i].tekstfont;
+  //console.log(document.querySelectorAll(".knapper"))
+  //alleKnappene.style.fontFamily = farger[i].tekstfont;
   document.body.style.backgroundImage = farger[i].bgimage;
   document.body.style.backgroundColor = farger[i].bgcolor;
+  document.body.style.fontSize = farger[i].tekststr;
+  //document.querySelectorAll("option:first-child").style.display = "none";
   
 }
 

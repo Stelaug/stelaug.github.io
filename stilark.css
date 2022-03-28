@@ -1,8 +1,11 @@
 body {
     width:100%;
     margin: 0px;
-    background-image: linear-gradient(to bottom right, #090737, #390026, #640000);
+    background-image:linear-gradient(to bottom right, #090737, #390026, #640000);
     background-color: #390026;
+    font-size: 3vw;
+    color:white;
+    font-family: "pixel unicode";
     }
 
 
@@ -28,7 +31,7 @@ body {
       " . Stats Stats Stats . "
       " . Support Support Support . "
       " . Support Support Support . ";
-      font-size:3vw;
+      
         
 }
 
@@ -431,16 +434,24 @@ figure {
     background: url("bilder/Andersettings.png") no-repeat;
     background-size:200px 60px;
     border-radius: 10px;
-    
-  }
-  
-  .settings {
+}
+
+.settings {
     position: fixed;
     bottom:0;
     right:0;
     display: inline-block;
+}
 
-  }
+option {
+    color:black;
+    font-size:3vw;
+    font-family: "pixel unicode";
+}
+
+option:first-child{
+    display: none;
+}
 
 
 .clips-grid-container {
@@ -452,7 +463,6 @@ figure {
       " . Header Header Header . "
       " . InstallTekst InstallTekst InstallTekst . "
       " . Clips Clips Clips . ";
-      font-size:3vw;
         color:white;
         font-family:'pixel unicode';
 }

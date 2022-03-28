@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stilark.css">
-    <script type="text/javascript" src="java.js"></script>
     <link rel="icon" href="bilder/andershd.png">
     <title>Anders Tale</title>
 </head>
-<body onload="riktigeFarger()">
+<body onload="riktigeFarger()" rel="preload">
         <div id="grid-container">
             <div class="settings">
-              <select id="temaVelger" onchange="riktigeFarger()">
+              <select id="temaVelger" class="settingsknapp" onchange="riktigeFarger()">
+                <option></option>
                 <option>Vanlig</option>
                 <option>Betre font</option>
                 <option>Dark</option>
@@ -55,7 +55,7 @@
                 But there was one thing God had not yet realised.<br>
                 <br>
                 God is not the way.<br>
-                <button id="show_him"><a href="pages/lore.html"> And Anders will show him.</a></button> <br>&nbsp;
+                <button id="show_him" class="knapper"><a href="pages/lore.html"> And Anders will show him.</a></button> <br>&nbsp;
             </p></div>
               <div class="LoreBilde"><img class="bilderhovedside storG" src="bilder/ALL_THEY_FEAR_IS_ANDERS_s.png"></div>
             </div>
@@ -68,7 +68,7 @@
             <div class="Among-us">
               <div class="AboutUsTekst"><p class="paddingTekst overtekst">About us:</p>
                 <p class="paddingTekst">
-                Lead software developer:  <button class="knapper"><a style="color:red;" href="https://github.com/Samdal" target="_blank">Drava</a></button> <br>
+                Lead software developer:  <button class="knapper"><a href="https://github.com/Samdal" target="_blank">Drava</a></button> <br>
                 Lead art designer: zielwek <br>
                 Designer: Daz Rhoan <br>
                 Developers: Johann & Marcusrong <br>
@@ -96,4 +96,5 @@
         
             
 </body>
+<script type="text/javascript" src="java.js"></script>
 </html>
